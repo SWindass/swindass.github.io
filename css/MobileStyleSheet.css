@@ -1,0 +1,230 @@
+﻿body {
+    font-family: 'Segoe UI Variable Text';
+    color: #000070;
+    font-size: 30px;
+}
+
+.title {
+    position: fixed;
+    width: 97%;
+    margin-top: -10px;
+    margin-left: 1px;
+    display:flex;
+    justify-content: space-between;
+    align-items: start;
+    background-color: white;
+    color: white;
+    padding: 10px;
+}
+
+.titleTop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navbar {
+    display:none;
+}
+
+.burgerContainer {
+    display: block;
+    cursor: pointer;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 70px;
+    height: 10px;
+    background-color: #333;
+    margin: 12px 0;
+    transition: 0.4s;
+}
+
+.change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-18px, 126px);
+    transform: rotate(-45deg) translate(-18px, 12px);
+}
+
+.change .bar2 {
+    opacity: 0;
+}
+
+.change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-16px, -16px);
+    transform: rotate(45deg) translate(-16px, -16px);
+}
+
+
+nav a {
+    color: #000070;
+    text-align: center;
+    padding: 5px;
+    text-decoration: none;
+    display:block;
+    width: 80px;
+}
+
+nav a:hover {
+    background-color: #ccc;
+    color: #000070;
+}
+
+.fullImage {
+    margin-top: 50px;
+    width: 96%;
+    height: auto;
+}
+
+.header1 {
+    width: 96%;
+    margin-top: 10px;
+    font-size: 48px;
+    text-align: center;
+}
+
+.bodyText {
+    margin-top: 10px;
+    font-size: 36px;
+    text-align: left;
+}
+
+.introBox {
+    display: block;
+    width: 97%;
+    height: auto;
+}
+
+.restrictedTextBox {
+    background-color: white;
+    margin-top: 2px;   
+    width: auto;
+    height: auto;
+    font-size: 38px;
+    text-align:justify;
+}
+
+.imageBox {
+    align-items:center;
+    height: 100%;
+}
+
+.textBox {
+    width: auto;
+    height: auto;
+    font-size: 28px;
+    text-align: left;
+}
+
+.expertise {
+    display: block;
+    width: 97%;
+    height: auto;
+}
+
+.capabilitiesTextBox {
+    background-color: #ff0070;
+    color: white;
+    border-radius: 4px;
+    margin-top: 2px;
+    width: 97%;
+    height: auto;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+}
+
+p {
+    margin-top: 10px;
+    display: flex;
+}
+
+p1 {
+    margin-top: 70px;
+    display: flex;
+}
+.button {
+    border: none;
+    color: white;
+    background-color: #000070;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.footer {
+    width: 97%;
+    height: auto;
+    margin-top: 50px;
+    margin-left:50px;
+    align-items: initial;
+    background-color: lightgray;
+    border-radius: 4px;
+}
+.footerTitle {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.footerTitle2 {
+    margin-left: 150px;
+}
+
+.footerText {
+    display: flex;
+    justify-content: start;
+    align-items: left;
+    margin-top: 50px;
+    margin-left: 20px;
+    font-size: 18px;
+    text-align: left;
+}
+.footerText2 {
+    margin-left: 20px;
+}
+
+/* form button config */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #000070;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    /* When moving the mouse over the submit button, add a darker green color */
+    input[type=submit]:hover {
+        background-color: #0000ff;
+    }
+
+/* Add a background color and some padding around the form */
+.container {
+    width: auto;
+    margin-top: 100px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-size: 38px;
+}

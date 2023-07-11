@@ -1,0 +1,3 @@
+﻿<FilesMatch "\.xml$">
+  ForceType application/xml
+</FilesMatch>
