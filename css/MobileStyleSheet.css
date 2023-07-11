@@ -180,6 +180,11 @@ p1 {
     margin-left: 150px;
 }
 
+.footerImage {
+    height: 40px;
+    width: auto;
+}
+
 .footerText {
     display: flex;
     justify-content: start;
