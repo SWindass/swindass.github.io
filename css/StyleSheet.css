@@ -121,12 +121,12 @@ nav a:hover {
     padding: 10px;
 }
 
-p {
+.p {
     margin-top: 10px;
     display: flex;
 }
 
-p1 {
+.p1 {
     margin-top: 70px;
     display: flex;
 }
