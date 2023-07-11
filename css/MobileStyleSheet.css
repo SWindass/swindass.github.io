@@ -9,7 +9,7 @@
     width: 97%;
     margin-top: -10px;
     margin-left: 1px;
-    display:flex;
+    display:block;
     justify-content: space-between;
     align-items: start;
     background-color: white;
