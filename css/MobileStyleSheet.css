@@ -74,6 +74,8 @@ nav a:hover {
     margin-top: 50px;
     width: 96%;
     height: auto;
+    border-radius: 4px;
+    margin-left: 50px;
 }
 
 .header1 {
