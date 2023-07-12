@@ -75,7 +75,7 @@ nav a:hover {
 
 .fullImage {
     margin-top: 50px;
-    width: 96%;
+    width: stretch;
     height: auto;
     border-radius: 4px;
     margin-left: 50px;
