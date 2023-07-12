@@ -106,10 +106,9 @@ nav a:hover {
 }
 
 .restrictedTextBox {
-    display: flex;
     background-color: white;
     margin-top: 2px;   
-    width: stretch;
+    width: 100%;
     height: auto;
     font-size: 18px;
     text-align:justify;
