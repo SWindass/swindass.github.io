@@ -87,15 +87,15 @@ nav a:hover {
 }
 
 .header1 {
-    width: 96%;
+    width: stretch;
     margin-top: 10px;
-    font-size: 48px;
+    font-size: 28px;
     text-align: center;
 }
 
 .bodyText {
     margin-top: 10px;
-    font-size: 36px;
+    font-size: 16px;
     text-align: left;
 }
 
