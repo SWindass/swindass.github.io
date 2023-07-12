@@ -1,20 +1,22 @@
 ﻿body {
     font-family: 'Segoe UI Variable Text';
     color: #000070;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .title {
-    position: fixed;
-    width: 97%;
+    width:stretch;
     margin-top: -10px;
     margin-left: 1px;
     display:block;
-    justify-content: space-between;
-    align-items: start;
     background-color: white;
     color: white;
     padding: 10px;
+}
+
+.logo {
+    height: 70px;
+    width: auto;
 }
 
 .titleTop {
@@ -30,6 +32,7 @@
 
 .burgerContainer {
     display: block;
+    align-items: end;
     cursor: pointer;
 }
 
@@ -42,7 +45,7 @@
 }
 
 .change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-18px, 126px);
+    -webkit-transform: rotate(-45deg) translate(-18px, 12px);
     transform: rotate(-45deg) translate(-18px, 12px);
 }
 

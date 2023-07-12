@@ -16,6 +16,11 @@
     padding: 10px;
 }
 
+.logo {
+    height: 70px;
+    width: auto;
+}
+
 .titleTop {
     display: flex;
     justify-content: space-between;
