@@ -115,8 +115,9 @@ nav a:hover {
 }
 
 .imageBox {
-    align-items:center;
-    height: 100%;
+    align-items: center;
+    width: stretch;
+    height: auto;
 }
 
 .textBox {
