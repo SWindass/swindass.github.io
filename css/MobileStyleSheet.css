@@ -1,7 +1,7 @@
 ﻿body {
     font-family: 'Segoe UI Variable Text';
     color: #000070;
-    font-size: 20px;
+    font-size: 10px;
 }
 
 .title {
@@ -149,13 +149,14 @@ p1 {
     display: flex;
 }
 .button {
+    width: stretch;
     border: none;
     color: white;
     background-color: #000070;
     padding: 16px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
+    display: block;
     font-size: 30px;
     margin: 4px 2px;
     transition-duration: 0.4s;
