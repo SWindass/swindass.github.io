@@ -83,7 +83,7 @@ nav a:hover {
     width: stretch;
     height: auto;
     border-radius: 4px;
-    margin-left: 50px;
+    margin-left: 5px;
 }
 
 .header1 {
@@ -101,7 +101,7 @@ nav a:hover {
 
 .introBox {
     display: block;
-    width: 97%;
+    width: stretch;
     height: auto;
 }
 
