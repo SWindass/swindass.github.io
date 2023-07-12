@@ -15,8 +15,8 @@
 }
 
 .logo {
-    height: 70px;
-    width: auto;
+    width: stretch;
+    height: auto;
 }
 
 .titleTop {
