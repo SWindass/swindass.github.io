@@ -5,20 +5,28 @@
 
 .title {
     position: fixed;
-    width: 97%;
+    width:100%;
     margin-top: -10px;
-    margin-left: 1px;
-    display:flex;
+    margin-left: 0px;
+    left: 0px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: white;
     color: white;
     padding: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .logo {
     height: 70px;
     width: auto;
+}
+
+.contactBar {
+    display: flex;
+    margin-right: 40px;
+    justify-content: space-between;
 }
 
 .titleTop {
@@ -152,13 +160,21 @@ nav a:hover {
 }
 
 .footer {
-    width: 97%;
+    width: 100%;
+    left: 0px;
     height: auto;
     margin-top: 50px;
-    margin-left:50px;
-    align-items: initial;
+    display: flex;
     background-color: lightgray;
     border-radius: 4px;
+}
+
+.divider1 {
+    border-left: 3px solid #38546d;
+    height: 5px;
+    padding: 20px;
+    right: 250px;
+    top: 10px;
 }
 .footerTitle {
     display: flex;
