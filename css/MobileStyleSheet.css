@@ -23,7 +23,8 @@
 }
 
 .logo {
-    width: stretch;
+    width: 100%;
+    height: auto;
 }
 
 .buttonDesktop{
