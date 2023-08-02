@@ -36,7 +36,7 @@
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .navbar {
@@ -81,7 +81,7 @@ nav a:hover {
     margin-top: 50px;
     width: 96%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .header1 {
@@ -139,12 +139,12 @@ nav a:hover {
 .capabilitiesTextBox {
     background-color: #000070;
     color: white;
-    border-radius: 10px;
+    border-radius: 7px;
     margin-top: 2px;
     margin-left: 50px;
     width: 360px;
     height: 200px;
-    flex-grow:1;
+    flex-grow: 1;
     font-size: 20px;
     padding: 10px;
 }
@@ -167,7 +167,7 @@ nav a:hover {
     margin-top: 50px;
     display: flex;
     background-color: lightgray;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .divider1 {
@@ -212,7 +212,7 @@ input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */
     border: 1px solid #ccc; /* Gray border */
-    border-radius: 10px; /* Rounded borders */
+    border-radius: 7px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
@@ -225,7 +225,7 @@ input[type=submit] {
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 7px;
     cursor: pointer;
 }
 
@@ -245,9 +245,9 @@ input[type=submit] {
 }
 
 .container {
-    width:50%;
+    width: 50%;
     margin-top: 100px;
-    border-radius: 10px;
+    border-radius: 7px;
     background-color: #000070;
     padding: 20px;
 }

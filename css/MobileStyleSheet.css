@@ -44,7 +44,7 @@
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .navbar {
@@ -113,7 +113,7 @@ nav a:hover {
     margin-top: 50px;
     width: 100%;
     height: auto;
-    border-radius: 10px;
+    border-radius: 7px;
     margin-left: 1px;
 }
 
@@ -170,9 +170,9 @@ nav a:hover {
 }
 
 .capabilitiesTextBox {
-    background:linear-gradient(to bottom, #0000ff 0%, #000070 100%);
+    background: linear-gradient(to bottom, #0000ff 0%, #000070 100%);
     color: white;
-    border-radius: 10px;
+    border-radius: 7px;
     margin-top: 20px;
     margin-left: 0;
     width: 100%;
@@ -204,7 +204,7 @@ p1 {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 7px;
 }
 
 .footer {
@@ -213,8 +213,8 @@ p1 {
     margin-top: 50px;
     margin-left: 0;
     align-items: initial;
-    background-color:gainsboro;
-    border-radius: 10px;
+    background-color: gainsboro;
+    border-radius: 7px;
 }
 .footerTitle {
     display: flex;
@@ -251,7 +251,7 @@ input[type=text], select, textarea {
     width: 100%; /* Full width */
     padding: 12px; /* Some padding */
     border: 1px solid #ccc; /* Gray border */
-    border-radius: 10px; /* Rounded borders */
+    border-radius: 7px; /* Rounded borders */
     box-sizing: border-box; /* Make sure that padding and width stays in place */
     margin-top: 6px; /* Add a top margin */
     margin-bottom: 16px; /* Bottom margin */
@@ -264,7 +264,7 @@ input[type=submit] {
     color: white;
     padding: 12px 20px;
     border: none;
-    border-radius: 10px;
+    border-radius: 7px;
     cursor: pointer;
 }
 
@@ -285,7 +285,7 @@ input[type=submit] {
 .container {
     width: 100%;
     margin-top: 100px;
-    border-radius: 10px;
+    border-radius: 7px;
     background-color: #000070;
     padding: 20px;
     font-size: 38px;
