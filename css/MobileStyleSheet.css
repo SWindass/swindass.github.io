@@ -59,7 +59,7 @@
 
 .burgerContainer {
     display:inline-block;
-    align-items: start;
+    align-items:initial;
     cursor: pointer;
 }
 
@@ -89,7 +89,7 @@
     width: 100px;
     background-color: gainsboro;
     display: none;
-    margin-left:0px;
+    margin-left:20px;
 }
 
 nav a {
