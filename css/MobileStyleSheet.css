@@ -40,7 +40,7 @@
     text-align: center;
     text-decoration: none;
     display: block;
-    font-size: 30px;
+    font-size: 20px;
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
@@ -65,7 +65,7 @@
 }
 
 .bar1, .bar2, .bar3 {
-    width: 70px;
+    width: 50px;
     height: 10px;
     background-color: #333;
     margin: 12px 0;
@@ -91,7 +91,7 @@
     background-color: gainsboro;
     display: none;
     margin-left: 20px;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 nav a {
