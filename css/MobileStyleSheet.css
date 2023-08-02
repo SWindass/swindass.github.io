@@ -162,8 +162,18 @@ nav a:hover {
     text-align: left;
 }
 
+.expertiseBlock {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .expertise {
     display: block;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: auto;
     margin-left: 0;
