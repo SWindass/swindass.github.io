@@ -283,7 +283,7 @@ input[type=submit] {
 }
 
 .container {
-    width: 50%;
+    width: 100%;
     margin-top: 100px;
     border-radius: 10px;
     background-color: #000070;
