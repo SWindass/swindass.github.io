@@ -218,6 +218,9 @@ p1 {
     cursor: pointer;
     border-radius: 7px;
 }
+button:hover {
+    background-color: #FF0070;
+}
 
 .footer {
     width: 100%;

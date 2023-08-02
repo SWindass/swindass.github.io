@@ -32,11 +32,14 @@
     background-color: #000070;
     padding: 16px 32px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+
     font-size: 16px;
     margin: 4px 2px;
     border-radius: 7px;
+}
+
+button:hover {
+    background-color: #FF0070;
 }
 
 .navbar {
@@ -147,6 +150,10 @@ nav a:hover {
     flex-grow: 1;
     font-size: 20px;
     padding: 10px;
+}
+
+capabilitiesTextBox:hover {
+    background-color: #FF0070;
 }
 
 .p {
