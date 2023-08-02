@@ -90,7 +90,8 @@
     width: 100px;
     background-color: gainsboro;
     display: none;
-    margin-left:20px;
+    margin-left: 20px;
+    font-size: 30px;
 }
 
 nav a {
@@ -147,7 +148,7 @@ nav a:hover {
 }
 
 .imageBox {
-    display: block;
+    display: none;
     width: 100%;
     height: auto;
     margin-left: 0;
