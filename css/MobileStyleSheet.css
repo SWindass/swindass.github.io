@@ -109,7 +109,7 @@ nav a:hover {
 
 .fullImage {
     margin-top: 50px;
-    width: stretch;
+    width: 100%;
     height: auto;
     border-radius: 4px;
     margin-left: 1px;
@@ -130,7 +130,7 @@ nav a:hover {
 
 .introBox {
     display: block;
-    width: stretch;
+    width: auto;
     height: auto;
 }
 
@@ -144,9 +144,7 @@ nav a:hover {
 }
 
 .imageBox {
-    display: none;
-    align-items: center;
-    width: stretch;
+    width: 100%;
     height: auto;
 }
 
@@ -159,7 +157,7 @@ nav a:hover {
 
 .expertise {
     display: block;
-    width: 97%;
+    width: 100%;
     height: auto;
 }
 
@@ -168,7 +166,7 @@ nav a:hover {
     color: white;
     border-radius: 4px;
     margin-top: 2px;
-    width: 97%;
+    width: 100%;
     height: auto;
     font-size: 30px;
     text-align: center;
