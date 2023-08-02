@@ -116,7 +116,8 @@ nav a:hover {
 }
 
 .header1 {
-    width: stretch;
+    width: 100%;
+    height: auto;
     margin-top: 10px;
     font-size: 28px;
     text-align: center;
@@ -130,8 +131,9 @@ nav a:hover {
 
 .introBox {
     display: block;
-    width: auto;
+    width: 100%;
     height: auto;
+    margin-left: 0;
 }
 
 .restrictedTextBox {
@@ -141,11 +143,13 @@ nav a:hover {
     height: auto;
     font-size: 18px;
     text-align:justify;
+    margin-left: 0;
 }
 
 .imageBox {
     width: 50%;
     height: auto;
+    margin-left: 0;
 }
 
 .textBox {
@@ -159,6 +163,7 @@ nav a:hover {
     display: block;
     width: 100%;
     height: auto;
+    margin-left: 0;
 }
 
 .capabilitiesTextBox {
@@ -166,6 +171,7 @@ nav a:hover {
     color: white;
     border-radius: 4px;
     margin-top: 2px;
+    margin-left: 0;
     width: 100%;
     height: auto;
     font-size: 30px;
