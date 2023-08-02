@@ -177,6 +177,7 @@ nav a:hover {
     width: 100%;
     height: auto;
     margin-left: 0;
+    margin-right: 20px;
 }
 
 .capabilitiesTextBox {
@@ -185,6 +186,7 @@ nav a:hover {
     border-radius: 7px;
     margin-top: 20px;
     margin-left: 0;
+    margin-right:10px;
     width: 100%;
     height: auto;
     font-size: 30px;
