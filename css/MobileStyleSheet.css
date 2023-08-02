@@ -260,7 +260,7 @@ input[type=text], select, textarea {
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
-    background-color: #000070;
+    background-color: #ff0070;
     color: white;
     padding: 12px 20px;
     border: none;
@@ -268,17 +268,25 @@ input[type=submit] {
     cursor: pointer;
 }
 
-    /* When moving the mouse over the submit button, add a darker green color */
+    /* When moving the mouse over the submit button, add a lighter blue color */
     input[type=submit]:hover {
         background-color: #0000ff;
     }
 
 /* Add a background color and some padding around the form */
+.contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .container {
-    width: auto;
+    width: 50%;
     margin-top: 100px;
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #000070;
     padding: 20px;
     font-size: 38px;
 }
