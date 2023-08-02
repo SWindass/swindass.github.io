@@ -5,25 +5,14 @@
 
 .title {
     width:stretch;
-    margin-top: -10px;
+    top: 0;
+    width: 100%;
     margin-left: 0px;
     left: 0px;
     display:block;
     background-color: white;
     color: white;
-    padding: 10px;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-.logo {
-    width: 20%;
-    height: auto;
-}
-
-.contactBar {
-    display: flex;
-    margin-right: 20px;
-    justify-content: space-between;
 }
 
 .titleTop {
@@ -33,13 +22,44 @@
     padding: 10px;
 }
 
+.logo {
+    width: stretch;
+}
+
+.buttonDesktop{
+    display:none;
+}
+
+.button {
+    width: stretch;
+    border: none;
+    color: white;
+    background-color: #000070;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 30px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
 .navbar {
     display:none;
 }
 
+.contactBar {
+    display: flex;
+    margin-right: 20px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
 .burgerContainer {
     display:inline-block;
-    align-items: end;
+    align-items: start;
     cursor: pointer;
 }
 
@@ -65,6 +85,12 @@
     transform: rotate(45deg) translate(-16px, -16px);
 }
 
+.menu {
+    width: 100px;
+    background-color: gainsboro;
+    display: none;
+    margin-left:0px;
+}
 
 nav a {
     color: #000070;
