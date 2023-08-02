@@ -169,7 +169,7 @@ nav a:hover {
 }
 
 .capabilitiesTextBox {
-    background-color: #ff0070;
+    background:linear-gradient(to bottom, #0000ff 0%, #000070 100%);
     color: white;
     border-radius: 4px;
     margin-top: 2px;
@@ -210,9 +210,9 @@ p1 {
     width: 97%;
     height: auto;
     margin-top: 50px;
-    margin-left:50px;
+    margin-left: 0;
     align-items: initial;
-    background-color: lightgray;
+    background-color:gainsboro;
     border-radius: 4px;
 }
 .footerTitle {
