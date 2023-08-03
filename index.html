@@ -21,6 +21,7 @@
     <link rel="canonical" href="https://www.marconi-electronics.com/">
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
     <script>
         $(function () {
             $("#header").load("header.html")
@@ -75,107 +76,102 @@
     <!-- Capabilities layout depends on the whether we are running on Mobile / Desktop-->
     <div class="expertiseBlock">
         <div class="expertise">
-            <div class="capabilitiesTextBox">
-                <h2>Design</h2>
+            <button type="button" class="capabilitiesTextBox" onclick="window.location.href = '/DesignExpertise.html';">
+                <h2>DESIGN</h2>
+
                 <ul>
                     <li>Requirements capture</li>
                     <li>Prototyping</li>
                     <li>Simulation</li>
                 </ul>
-            </div>
+            </button>
 
-            <div class="capabilitiesTextBox">
-                <h2>Schematic capture</h2>
+            <button class="capabilitiesTextBox" onclick="window.location.href = '/SchematicCapture.html';">
+                <h2>SCHEMATIC</h2>
                 <ul>
                     <li>High speed Digital design</li>
                     <li>Analog Design</li>
                     <li>Power Supply Design</li>
                 </ul>
-            </div>
+            </button>
 
-            <div class="capabilitiesTextBox">
-                <h2>PCB Layout</h2>
+            <button class="capabilitiesTextBox" onclick="window.location.href = '/PCBLayout.html';">
+                <h2>PCB LAYOUT</h2>
                 <ul>
                     <li>Switch mode Power Supply</li>
                     <li>High-Speed Digital Design</li>
                     <li>Sensitive Analog circuity</li>
                 </ul>
-            </div>
+            </button>
 
-            <div class="capabilitiesTextBox">
-                <h2>EMC Compliance</h2>
+            <button class="capabilitiesTextBox" onclick="window.location.href = '/EMCCompliance.html';">
+                <h2>EMC COMPLIANCE</h2>
                 <ul>
                     <li>Design for EMC</li>
                     <li>EMC integrity</li>
                     <li>EMC Filter Design</li>
                 </ul>
-            </div>
+            </button>
 
-            <div class="capabilitiesTextBox">
-                <h2>Design for X (DfX)</h2>
+            <button class="capabilitiesTextBox" onclick="window.location.href = '/DesignForX.html';">
+                <h2>DESIGN FOR X (DfX)</h2>
                 <ul>
                     <li>Design for Test</li>
                     <li>Design for Manufacture</li>
                     <li>Design for Compliance</li>
                 </ul>
-            </div>
+            </button>
         </div>
     </div>
 
 
 
-        <div class="contact">
-            <div class="container">
-                <h2 style="color:white">Contact us</h2>
+    <div class="contact">
+        <div class="container">
+            <h2 style="color:white">Contact us</h2>
 
-                <form action="https://formsubmit.co/187f9ac4d537e4992b81b5ba9c3a0a29" method="POST">
-                    <!--Honey Pot-->
-                    <input type="text" name="_honey" style="display: none;" />
-                    <!--Disable Captcha-->
-                    <input type="hidden" name="_captcha" value="false">
-                    <!--direct to thank you page-->
-                    <input type="hidden" name="_next" value="https://marconi-electronics.com/thanks.html">
+            <form action="https://formsubmit.co/187f9ac4d537e4992b81b5ba9c3a0a29" method="POST">
+                <!--Honey Pot-->
+                <input type="text" name="_honey" style="display: none;" />
+                <!--Disable Captcha-->
+                <input type="hidden" name="_captcha" value="false">
+                <!--direct to thank you page-->
+                <input type="hidden" name="_next" value="https://marconi-electronics.com/thanks.html">
 
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="First&nbsp;name" placeholder="Your name..." required>
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="First&nbsp;name" placeholder="Your name..." required>
 
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="Last&nbsp;name" placeholder="Your last name..." required>
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="Last&nbsp;name" placeholder="Your last name..." required>
 
-                    <label for="email">Email Address</label>
-                    <input type="text" id="email" name="Email&nbsp;address" placeholder="Your email address..." required>
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="Email&nbsp;address" placeholder="Your email address..." required>
 
-                    <label for="organisation">Organisation</label>
-                    <input type="text" id="organisation" name="Organisation" placeholder="Your organisation..." required>
+                <label for="organisation">Organisation</label>
+                <input type="text" id="organisation" name="Organisation" placeholder="Your organisation..." required>
 
-                    <label for="phone">Phone Number</label>
-                    <input type="text" id="phone" name="Phone&nbsp;number" placeholder="Your phone number...">
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="Phone&nbsp;number" placeholder="Your phone number...">
 
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="Subject" placeholder="Please describe your project... " style="height:200px"></textarea>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="Subject" placeholder="Please describe your project... " style="height:200px"></textarea>
 
-                    <input type="submit" value="Submit">
+                <input type="submit" value="Submit">
 
-                </form>
-            </div>
+            </form>
         </div>
+    </div>
 
 
-        <div class="footer">
-            <p> ©2023 Marconi Electronics. All rights reserved.</p>
+    <div class="footer">
+        <p> ©2023 Marconi Electronics. All rights reserved.</p>
 
-            <p> &nbsp;&nbsp; | &nbsp;&nbsp;  </p>
-            <a href="/about.html"><p>Legal notices</p>
+        <p> &nbsp;&nbsp; | &nbsp;&nbsp;  </p>
+        <a href="/about.html"><p>Legal notices</p>
 
 
-        </div>
+    </div>
 
 </body>
-
-<script>
-    function openContactForm() {
-        window.location.href = '/contact.html';
-    }
-</script>
 
 </html>
