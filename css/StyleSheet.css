@@ -35,12 +35,13 @@
     font-size: 16px;
     margin: 4px 2px;
     border-radius: 7px;
+    
 }
 
 button:hover {
     background-color: #FF0070;
     border-color: #FF0070;
-    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.8);
+    box-shadow: none;
 }
 
 .navbar {
@@ -147,6 +148,7 @@ ul {
 
 .capabilitiesTextBox {
     background-color: #000070;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.8);
     color: white;
     border-radius: 7px;
     margin-top: 20px;
