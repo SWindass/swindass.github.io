@@ -138,6 +138,10 @@ nav a:hover {
     align-items: center;
 }
 
+ul {
+    list-style-type:none;
+}
+
 .capabilitiesTextBox {
     background-color: #000070;
     color: white;

@@ -180,6 +180,10 @@ nav a:hover {
     margin-right: 20px;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .capabilitiesTextBox {
     background: linear-gradient(to bottom, #0000ff 0%, #000070 100%);
     color: white;
