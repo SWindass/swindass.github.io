@@ -57,13 +57,6 @@ button:hover {
     margin-right: 50px;
 }
 
-.contactBar {
-    display: none;
-}
-.burgerContainer {
-    display: none;
-}
-
 nav a {
     color: #000070;
     text-align: center;
@@ -77,6 +70,15 @@ nav a:hover {
     background-color: #ccc;
     color: #000070;
 }
+
+.contactBar {
+    display: none;
+}
+.burgerContainer {
+    display: none;
+}
+
+
 
 .fullImage {
     margin-left: 20px;
