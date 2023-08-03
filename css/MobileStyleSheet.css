@@ -38,13 +38,13 @@
     background-color: #000070;
     padding: 16px 32px;
     text-align: center;
-    text-decoration: none;
-    display: block;
     font-size: 10px;
     margin: 4px 2px;
-    transition-duration: 0.4s;
-    cursor: pointer;
     border-radius: 7px;
+}
+
+button:hover {
+    background-color: #FF0070;
 }
 
 .navbar {
@@ -304,4 +304,13 @@ input[type=submit] {
     background-color: #000070;
     padding: 20px;
     font-size: 38px;
+}
+
+.container1 {
+    width: 100%;
+    margin-top: 100px;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 38px;
+    text-align: center;
 }

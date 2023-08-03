@@ -32,7 +32,6 @@
     background-color: #000070;
     padding: 16px 32px;
     text-align: center;
-
     font-size: 16px;
     margin: 4px 2px;
     border-radius: 7px;
@@ -259,4 +258,13 @@ input[type=submit] {
     border-radius: 7px;
     background-color: #000070;
     padding: 20px;
+}
+
+.container1 {
+    width: 100%;
+    margin-top: 100px;
+    border-radius: 7px;
+    padding: 20px;
+    font-size: 38px;
+    text-align: center;
 }
