@@ -38,7 +38,36 @@
     <div class="contact">
         <div class="container">
             <h2 style="color:white">Contact us</h2>
-            <script type="text/javascript" src="https://form.jotform.com/jsform/250333345673354"></script>
+
+            <form action="https://formsubmit.co/187f9ac4d537e4992b81b5ba9c3a0a29" method="POST">
+                <!--Honey Pot-->
+                <input type="text" name="_honey" style="display: none;" />
+                <!--Disable Captcha-->
+                <input type="hidden" name="_captcha" value="false">
+                <!--direct to thank you page-->
+                <input type="hidden" name="_next" value="https://www.marconi-electronics.com/thanks.html">
+
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="First&nbsp;name" placeholder="Your name..." required>
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="Last&nbsp;name" placeholder="Your last name..." required>
+
+                <label for="email">Email Address</label>
+                <input type="text" id="email" name="Email&nbsp;address" placeholder="Your email address..." required>
+
+                <label for="organisation">Organisation</label>
+                <input type="text" id="organisation" name="Organisation" placeholder="Your organisation..." required>
+
+                <label for="phone">Phone Number</label>
+                <input type="text" id="phone" name="Phone&nbsp;number" placeholder="Your phone number...">
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="Subject" placeholder="Please describe your project... " style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
         </div>
     </div>
 </body>
