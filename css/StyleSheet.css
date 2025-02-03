@@ -62,14 +62,16 @@ button:hover {
 nav a {
     color: #000070;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     text-decoration: none;
     display:block;
-    width: 80px;
+    width: 100px;
 }
 
 nav a:hover {
-    background-color: #ccc;
+    color: #FFFFFF;
+    font-weight: bold;
+    background-color: #FF0070;
     color: #000070;
 }
 
