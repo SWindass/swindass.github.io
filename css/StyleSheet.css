@@ -63,14 +63,16 @@ nav a {
     color: #000070;
     text-align: center;
     padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
     text-decoration: none;
-    display:block;
-    width: 100px;
+    display: block;
+    width: auto;
 }
 
 nav a:hover {
-    color: #FFFFFF;
-    font-weight: bold;
+    border-radius: 7px;
+    #font-weight: bold;
     background-color: #FF0070;
     color: #000070;
 }
@@ -97,9 +99,15 @@ nav a:hover {
     text-align: center;
 }
 
-.bodyText {
+.header2 {
     margin-top: 10px;
     font-size: 36px;
+    text-align: left;
+}
+
+.header3 {
+    margin-top: 10px;
+    font-size: 18px;
     text-align: left;
 }
 

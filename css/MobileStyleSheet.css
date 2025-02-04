@@ -128,7 +128,13 @@ nav a:hover {
     text-align: center;
 }
 
-.bodyText {
+.header2 {
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: left;
+}
+
+.header3 {
     margin-top: 10px;
     font-size: 16px;
     text-align: left;
