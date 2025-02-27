@@ -140,7 +140,7 @@ nav a:hover {
     text-align: left;
 }
 
-/* Page setup using Grids */
+/* Page setup not using Grids on the mobile app */
 .container {
     width: 100%;
     place-self: center;
@@ -151,32 +151,29 @@ nav a:hover {
 }
 
 .header {
-    grid-area: header;
     text-align: center;
 }
         
 .services {
-    grid-area: services;
 }
 
 .contactForm {
-    grid-area: contactForm;
-    align-content: center;
+    width: auto;
+    font-size: 18px;
+    height: auto;
+    display: flex;
 }
 
 .footer {
-    grid-area: footer;
+    font-size: 18px;
 }
 
 .content {
-    width: 100%;
-    align-content: center;
     background-color: #ffffff;
-    padding: 5px;
+    font-size: 18px;
 }
 
 .leftContentBox {
-        grid-area: leftContentBox;
         background-color: #f1f1f1;
         border-radius: 10px;
         margin-top: 2px;
@@ -185,12 +182,10 @@ nav a:hover {
         width: auto;
         height: auto;
         font-size: 18px;
-        opacity: 0.95;
         z-index: 1;
     }
 
 .rightContentBox {
-        grid-area: rightContentBox;
         background-color: #f1f1f1;
         border-radius: 10px;
         margin-top: 2px;
@@ -199,7 +194,6 @@ nav a:hover {
         width: auto;
         height: auto;
         font-size: 18px;
-        opacity: 0.95;
         z-index: 1;
     }
 /* End of page setup*/
