@@ -142,10 +142,8 @@ nav a:hover {
 
 /* Page setup not using Grids on the mobile app */
 .container {
-    width: auto;
-    
-    align-content: flex;
-    gap: 5px;
+    width: stretch;
+    align-content: flex-start;
     background-color: #ffffff;
     padding: 5px;
 }
@@ -153,11 +151,13 @@ nav a:hover {
 .header {
     text-align: center;
 }
-        
+
 .services {
+    font-size: 18px;
 }
 
 .contactForm {
+    width: stretch;
     min-width: 1000px;
     font-size: 18px;
     height: auto;
