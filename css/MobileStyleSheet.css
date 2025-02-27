@@ -143,45 +143,63 @@ nav a:hover {
 /* Page setup not using Grids on the mobile app */
 .container {
     background-color: #ffffff;
-    width: 100%;
+    width: auto;
     padding: 5px;
 }
 
 .header {
     background-color: #ffffff;
-    width: 100%;
+    width: auto;
     text-align: center;
 }
 
 .services {
     background-color: #ffffff;
-    width: 100%;
+    width: auto;
     font-size: 18px;
 }
 
 .contactForm {
     background-color: #ffffff;
     width: stretch;
-    width: 100%;
-    min-width: 1000px;
+    min-width: 500px;
     font-size: 18px;
     height: auto;
     display: flex;
 }
+/* Add a background color and some padding around the form */
+.contact {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactContainer {
+    width: 100%;
+    margin-top: 100px;
+    border-radius: 7px;
+    background-color: #000070;
+    padding: 10px;
+    font-size: 38px;
+}
+
+
 
 .footer {
-    width: 100%;
+    width: auto;
     font-size: 14px;
 }
 
 .content {
-    width: 100%;
+    width: auto;
     background-color: #ffffff;
     font-size: 18px;
 }
 
 .leftContentBox {
-    width: 100%;
+    width: auto;
     height: auto;
     background-color: #f1f1f1;
     border-radius: 10px;
@@ -192,7 +210,7 @@ nav a:hover {
 }
 
 .rightContentBox {
-    width: 100%;
+    width: auto;
     height: auto;
     background-color: #f1f1f1;
     border-radius: 10px;
@@ -366,26 +384,10 @@ input[type=submit] {
         background-color: #0000ff;
     }
 
-/* Add a background color and some padding around the form */
-.contact {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.contactContainer {
-    width: 100%;
-    margin-top: 100px;
-    border-radius: 7px;
-    background-color: #000070;
-    padding: 10px;
-    font-size: 38px;
-}
 
 .container1 {
-    width: 100%;
+    width: auto;
     margin-top: 100px;
     border-radius: 7px;
     padding: 20px;
