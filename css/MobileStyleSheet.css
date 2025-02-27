@@ -145,57 +145,37 @@ nav a:hover {
     width: 100%;
     place-self: center;
     align-content: center;
-    display: grid;
-    grid-template-areas:
-        "header"
-        "services"
-        "contactForm"
-        "footer";
-    grid-template-columns: 1fr;
     gap: 5px;
     background-color: #ffffff;
     padding: 5px;
 }
 
-    .container > div {
-        background-color: #ffffff;
-        padding: 10px;
-    }
-
-        .container > div.header {
-            grid-area: header;
-            text-align: center;
-        }
+.header {
+    grid-area: header;
+    text-align: center;
+}
         
-        .container > div.services {
-            grid-area: services;
-        }
+.services {
+    grid-area: services;
+}
 
-        .container > div.contactForm {
-            grid-area: contactForm;
-            align-content: center;
-        }
-        .container > div.footer {
-            grid-area: footer;
-        }
+.contactForm {
+    grid-area: contactForm;
+    align-content: center;
+}
+
+.footer {
+    grid-area: footer;
+}
 
 .content {
     width: 100%;
     align-content: center;
-    display: grid;
-    grid-template-areas:
-        "leftContentBox"
-        "rightContentBox";
-    grid-template-columns: 1fr;
-    gap: 5px;
     background-color: #ffffff;
     padding: 5px;
 }
 
-.content > div {
-    background-color: #ffffff;
-    }
-    .content > div.leftContentBox {
+.leftContentBox {
         grid-area: leftContentBox;
         background-color: #f1f1f1;
         border-radius: 10px;
@@ -209,7 +189,7 @@ nav a:hover {
         z-index: 1;
     }
 
-    .content > div.rightContentBox {
+.rightContentBox {
         grid-area: rightContentBox;
         background-color: #f1f1f1;
         border-radius: 10px;
