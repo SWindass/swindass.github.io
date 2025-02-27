@@ -143,19 +143,19 @@ nav a:hover {
 /* Page setup not using Grids on the mobile app */
 .container {
     background-color: #ffffff;
-    width: auto;
+    width: 100%;
     padding: 5px;
 }
 
 .header {
     background-color: #ffffff;
-    width: stretch;
+    width: 100%;
     text-align: center;
 }
 
 .services {
     background-color: #ffffff;
-    width: auto;
+    width: 100%;
     font-size: 18px;
 }
 
@@ -170,18 +170,18 @@ nav a:hover {
 }
 
 .footer {
-    width: stretch;
+    width: 100%;
     font-size: 14px;
 }
 
 .content {
-    width: auto;
+    width: 100%;
     background-color: #ffffff;
     font-size: 18px;
 }
 
 .leftContentBox {
-    width: auto;
+    width: 100%;
     height: auto;
     background-color: #f1f1f1;
     border-radius: 10px;
@@ -192,7 +192,7 @@ nav a:hover {
 }
 
 .rightContentBox {
-    width: auto;
+    width: 100%;
     height: auto;
     background-color: #f1f1f1;
     border-radius: 10px;
@@ -246,7 +246,7 @@ nav a:hover {
     display: block;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 100%;
     height: auto;
     margin-left: 0;
     margin-right: 0px;
