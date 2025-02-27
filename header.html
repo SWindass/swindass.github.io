@@ -25,57 +25,57 @@
 
 
 </head>
+<body>
+    <header>
+        <!-- Website Title -->
+        <div class="title">
+            <div class="titleTop">
+                <a href="/index.html"><img src="/images/Website_logo.jpg" alt=" " class="logo"></a>
 
-<header>
-    <!-- Website Title -->
-    <div class="title">
-        <div class="titleTop">
-            <a href="/index.html"><img src="/images/Website_logo.jpg" alt=" " class="logo"></img></a>
+                <div class="buttonDesktop">
+                    <button type="button" class="button" onclick="openContactForm()">CONTACT MARCONI</button>
+                </div>
+            </div>
 
-            <div class="buttonDesktop">
-                <button type="button" class="button" onclick="openContactForm()">CONTACT MARCONI</button>
+            <!-- Navigation Bar, only visible on Desktop version of the website -->
+            <nav class="navbar">
+                <div class="navMenu">
+                    <a href="/DesignExpertise.html">SERVICES</a>
+                    <a href="/PCBLayout.html">PCBs</a>
+                    <a href="/SchematicCapture.html">SCHEMATICS</a>
+                    <a href="/EMCCompliance.html">EMC</a>
+                    <a href="/DesignForX.html">DESIGN FOR X</a>
+                    <a href="/index.html">HOME</a>
+                    <a href="/about.html">ABOUT</a>
+                </div>
+            </nav>
+
+            <!-- Burger menu only visible on the mobile version of the website -->
+            <div class="contactBar">
+                <div class="burgerContainer " onclick="ShowHide(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+
+                <div id="Menu" class="menu">
+                    <h2><a href="/index.html">Home</a></h2>
+                    <h2><a href="/DesignExpertise.html">Services</a></h2>
+                    <h2><a href="/PCBLayout.html">PCBs</a></h2>
+                    <h2><a href="/SchematicCapture.html">Schematics</a></h2>
+                    <h2><a href="/EMCCompliance.html">EMC</a></h2>
+                    <h2><a href="/DesignForX.html">Design for X</a></h2>
+                    <h2><a href="/about.html">About</a></h2>
+                </div>
+
+                <div>
+                    <button type="button" class="button" onclick="openContactForm()">CONTACT</button>
+                </div>
             </div>
         </div>
 
-        <!-- Navigation Bar, only visible on Desktop version of the website -->
-        <nav class="navbar">
-            <div class="navMenu">
-                <a href="/DesignExpertise.html">SERVICES</a>
-                <a href="/PCBLayout.html">PCBs</a>
-                <a href="/SchematicCapture.html">SCHEMATICS</a>
-                <a href="/EMCCompliance.html">EMC</a>
-                <a href="/DesignForX.html">DESIGN FOR X</a>
-                <a href="/index.html">HOME</a>
-                <a href="/about.html">ABOUT</a>
-            </div>
-        </nav>
 
-        <!-- Burger menu only visible on the mobile version of the website -->
-        <div class="contactBar">
-            <div class="burgerContainer " onclick="ShowHide(this)">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
-            </div>
-
-            <div id="Menu" class="menu">
-                <h2><a href="/index.html">Home</a><h2>
-                <h2><a href="/DesignExpertise.html">Services</a><h2>
-                <h2><a href="/PCBLayout.html">PCBs</a><h2>
-                <h2><a href="/SchematicCapture.html">Schematics</a>
-                <h2><a href="/EMCCompliance.html">EMC</a>
-                <h2><a href="/DesignForX.html">Design for X</a>
-                <h2><a href="/about.html">About</a></h2>
-            </div>
-            
-            <div>
-                <button type="button" class="button" onclick="openContactForm()">CONTACT</button>
-            </div>
-        </div>
-    </div>
-
-
-</header>
+    </header>
 
     <script>
         function openContactForm() {
@@ -98,5 +98,5 @@
         }
     </script>
 
-
-    </html>
+</body>
+</html>

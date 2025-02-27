@@ -75,7 +75,6 @@ nav a {
 
 nav a:hover {
     border-radius: 7px;
-    #font-weight: bold;
     background-color: #FF0070;
     color: #000070;
 }
@@ -160,8 +159,8 @@ nav a:hover {
     align-content: center;
     display: grid;
     grid-template-areas:
-        "leftContentBox rightContentBox";
-        "leftContentBox1 rightContentBox1";
+        "leftContentBox rightContentBox"
+        "leftContentBox1 rightContentBox1"
         "leftContentBox2 rightContentBox2";
     grid-template-columns: 1fr 1fr;
     gap: 5px;
@@ -327,7 +326,6 @@ capabilitiesTextBox:hover {
 .footerText {
     display: flex;
     justify-content: start;
-    align-items: left;
     margin-top: 50px;
     margin-left: 20px;
     font-size: 18px;

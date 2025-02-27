@@ -332,7 +332,6 @@ button:hover {
 .footerText {
     display: flex;
     justify-content: start;
-    align-items: left;
     margin-top: 50px;
     margin-left: 20px;
     font-size: 18px;
