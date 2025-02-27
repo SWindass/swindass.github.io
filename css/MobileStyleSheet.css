@@ -35,7 +35,7 @@
     width: stretch;
     border: none;
     color: white;
-    background-color: #000070;
+    background-color: #0000ff;
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.8);
     padding: 16px 32px;
     text-align: center;
@@ -142,24 +142,28 @@ nav a:hover {
 
 /* Page setup not using Grids on the mobile app */
 .container {
+    background-color: #ffffff;
     width: stretch;
     align-content: flex-start;
-    background-color: #ffffff;
     padding: 5px;
 }
 
 .header {
+    background-color: #ffffff;
     width: stretch;
     text-align: center;
 }
 
 .services {
+    background-color: #ffffff;
     width: stretch;
     font-size: 18px;
 }
 
 .contactForm {
+    background-color: #ffffff;
     width: stretch;
+    width: 100%;
     min-width: 1000px;
     font-size: 18px;
     height: auto;
@@ -375,7 +379,7 @@ input[type=submit] {
     align-items: center;
 }
 
-.container {
+.contactContainer {
     width: 100%;
     margin-top: 100px;
     border-radius: 7px;
