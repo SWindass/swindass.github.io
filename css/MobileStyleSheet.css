@@ -140,6 +140,93 @@ nav a:hover {
     text-align: left;
 }
 
+/* Page setup using Grids */
+.container {
+    width: 75%;
+    place-self: center;
+    align-content: center;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "services services"
+        "contactForm contactForm"
+        "footer footer";
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+    .container > div {
+        background-color: #ffffff;
+        padding: 10px;
+    }
+
+        .container > div.header {
+            grid-area: header;
+            text-align: center;
+        }
+
+        .container > div.services {
+            grid-area: services;
+        }
+
+        .container > div.contactForm {
+            grid-area: contactForm;
+            align-content: center;
+        }
+
+        .container > div.footer {
+            grid-area: footer;
+        }
+
+.content {
+    width: 100%;
+    align-content: center;
+    display: grid;
+    grid-template-areas:
+        "leftContentBox rightContentBox";
+    "leftContentBox1 rightContentBox1";
+    "leftContentBox2 rightContentBox2";
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+    .content > div {
+        background-color: #ffffff;
+    }
+
+        .content > div.leftContentBox {
+            grid-area: leftContentBox;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            margin-top: 2px;
+            margin-left: 5px;
+            padding: 20px;
+            width: auto;
+            height: auto;
+            font-size: 18px;
+            opacity: 0.95;
+            z-index: 1;
+        }
+
+        .content > div.rightContentBox {
+            grid-area: rightContentBox;
+            background-color: #f1f1f1;
+            border-radius: 10px;
+            margin-top: 2px;
+            margin-left: 5px;
+            padding: 20px;
+            width: auto;
+            height: auto;
+            font-size: 18px;
+            opacity: 0.95;
+            z-index: 1;
+        }
+/* End of page setup*/
+
 .introBox {
     display: block;
     width: 100%;
