@@ -43,6 +43,7 @@
 button:hover {
     background-color: #FF0070;
     border-color: #FF0070;
+    color: #000070;
     box-shadow: none;
 }
 
