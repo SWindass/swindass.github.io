@@ -162,7 +162,7 @@ nav a:hover {
 .contactForm {
     background-color: #ffffff;
     width: stretch;
-    min-width: 400px;
+    min-width: 100px;
     font-size: 18px;
     height: auto;
     display: flex;
