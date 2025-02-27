@@ -142,16 +142,16 @@ nav a:hover {
 
 /* Page setup using Grids */
 .container {
-    width: 75%;
+    width: 100%;
     place-self: center;
     align-content: center;
     display: grid;
     grid-template-areas:
-        "header header"
-        "services services"
-        "contactForm contactForm"
-        "footer footer";
-    grid-template-columns: 1fr 1fr;
+        "header"
+        "services"
+        "contactForm"
+        "footer";
+    grid-template-columns: 1fr;
     gap: 5px;
     background-color: #ffffff;
     padding: 5px;
@@ -166,7 +166,7 @@ nav a:hover {
             grid-area: header;
             text-align: center;
         }
-
+        
         .container > div.services {
             grid-area: services;
         }
@@ -175,7 +175,6 @@ nav a:hover {
             grid-area: contactForm;
             align-content: center;
         }
-
         .container > div.footer {
             grid-area: footer;
         }
@@ -185,46 +184,44 @@ nav a:hover {
     align-content: center;
     display: grid;
     grid-template-areas:
-        "leftContentBox rightContentBox";
-    "leftContentBox1 rightContentBox1";
-    "leftContentBox2 rightContentBox2";
-    grid-template-columns: 1fr 1fr;
+        "leftContentBox"
+        "rightContentBox";
+    grid-template-columns: 1fr;
     gap: 5px;
     background-color: #ffffff;
     padding: 5px;
 }
 
-    .content > div {
-        background-color: #ffffff;
+.content > div {
+    background-color: #ffffff;
+    }
+    .content > div.leftContentBox {
+        grid-area: leftContentBox;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        margin-top: 2px;
+        margin-left: 5px;
+        padding: 20px;
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        opacity: 0.95;
+        z-index: 1;
     }
 
-        .content > div.leftContentBox {
-            grid-area: leftContentBox;
-            background-color: #f1f1f1;
-            border-radius: 10px;
-            margin-top: 2px;
-            margin-left: 5px;
-            padding: 20px;
-            width: auto;
-            height: auto;
-            font-size: 18px;
-            opacity: 0.95;
-            z-index: 1;
-        }
-
-        .content > div.rightContentBox {
-            grid-area: rightContentBox;
-            background-color: #f1f1f1;
-            border-radius: 10px;
-            margin-top: 2px;
-            margin-left: 5px;
-            padding: 20px;
-            width: auto;
-            height: auto;
-            font-size: 18px;
-            opacity: 0.95;
-            z-index: 1;
-        }
+    .content > div.rightContentBox {
+        grid-area: rightContentBox;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        margin-top: 2px;
+        margin-left: 5px;
+        padding: 20px;
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        opacity: 0.95;
+        z-index: 1;
+    }
 /* End of page setup*/
 
 .introBox {
@@ -404,7 +401,7 @@ input[type=submit] {
     margin-top: 100px;
     border-radius: 7px;
     background-color: #000070;
-    padding: 20px;
+    padding: 10px;
     font-size: 38px;
 }
 
