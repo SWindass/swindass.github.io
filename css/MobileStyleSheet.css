@@ -143,8 +143,7 @@ nav a:hover {
 /* Page setup not using Grids on the mobile app */
 .container {
     background-color: #ffffff;
-    width: stretch;
-    align-content: flex-start;
+    width: auto;
     padding: 5px;
 }
 
@@ -156,7 +155,7 @@ nav a:hover {
 
 .services {
     background-color: #ffffff;
-    width: stretch;
+    width: auto;
     font-size: 18px;
 }
 
@@ -176,33 +175,31 @@ nav a:hover {
 }
 
 .content {
-    width: stretch;
+    width: auto;
     background-color: #ffffff;
     font-size: 18px;
 }
 
 .leftContentBox {
-    width: stretch;
+    width: auto;
+    height: auto;
     background-color: #f1f1f1;
     border-radius: 10px;
     margin-top: 2px;
     margin-left: 5px;
     padding: 20px;
-    height: auto;
     font-size: 18px;
-    z-index: 1;
 }
 
 .rightContentBox {
-    width: stretch;
+    width: auto;
+    height: auto;
     background-color: #f1f1f1;
     border-radius: 10px;
     margin-top: 2px;
     margin-left: 5px;
     padding: 20px;
-    height: auto;
     font-size: 18px;
-    z-index: 1;
 }
 /* End of page setup*/
 
@@ -249,7 +246,7 @@ nav a:hover {
     display: block;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: auto;
     height: auto;
     margin-left: 0;
     margin-right: 0px;
