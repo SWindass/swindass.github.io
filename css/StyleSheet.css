@@ -13,12 +13,14 @@
     background-color: white;
     color: white;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 2;
 }
 .titleTop {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-right: 50px;
+    
 }
 
 .logo {
@@ -45,7 +47,7 @@ button:hover {
 }
 
 .navbar {
-    background: linear-gradient(to bottom, #ffffff 0%, #ccc 100%);
+    background: linear-gradient(to bottom, #000070 0%, #000000 100%);
     width: 100%;
     overflow: auto;
     display: flex;
@@ -60,7 +62,7 @@ button:hover {
 }
 
 nav a {
-    color: #000070;
+    color: #ffffff;
     text-align: center;
     padding: 10px;
     padding-left: 30px;
@@ -91,9 +93,11 @@ nav a:hover {
     width: 96%;
     height: auto;
     border-radius: 7px;
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.8);
 }
 
 .header1 {
+    color: #000070;
     margin-top: 10px;
     font-size: 48px;
     text-align: center;
@@ -111,29 +115,187 @@ nav a:hover {
     text-align: left;
 }
 
+/* Page setup using Grids */
+.container {
+    width: 75%;
+    place-self: center;
+    align-content: center;
+    display: grid;
+    grid-template-areas:
+        "header header"
+        "services services"
+        "contactForm contactForm"
+        "footer footer";
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+    .container > div {
+        background-color: #ffffff;
+        padding: 10px;
+    }
+
+        .container > div.header {
+            grid-area: header;
+            text-align: center;
+        }
+        
+        .container > div.services {
+            grid-area: services;
+        }
+
+        .container > div.contactForm {
+            grid-area: contactForm;
+            align-content: center;
+        }
+        .container > div.footer {
+            grid-area: footer;
+        }
+
+.content {
+    width: 100%;
+    align-content: center;
+    display: grid;
+    grid-template-areas:
+        "leftContentBox rightContentBox";
+        "leftContentBox1 rightContentBox1";
+        "leftContentBox2 rightContentBox2";
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+.content > div {
+    background-color: #ffffff;
+    }
+    .content > div.leftContentBox {
+        grid-area: leftContentBox;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        margin-top: 2px;
+        margin-left: 5px;
+        padding: 20px;
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        opacity: 0.95;
+        z-index: 1;
+    }
+
+    .content > div.rightContentBox {
+        grid-area: rightContentBox;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        margin-top: 2px;
+        margin-left: 5px;
+        padding: 20px;
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        opacity: 0.95;
+        z-index: 1;
+    }
+    .content > div.leftContentBox1 {
+        grid-area: leftContentBox;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        margin-top: 2px;
+        margin-left: 5px;
+        padding: 20px;
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        opacity: 0.95;
+        z-index: 1;
+    }
+
+    .content > div.rightContentBox1 {
+        grid-area: rightContentBox;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        margin-top: 2px;
+        margin-left: 5px;
+        padding: 20px;
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        opacity: 0.95;
+        z-index: 1;
+    }
+    .content > div.leftContentBox2 {
+        grid-area: leftContentBox;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        margin-top: 2px;
+        margin-left: 5px;
+        padding: 20px;
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        opacity: 0.95;
+        z-index: 1;
+    }
+
+    .content > div.rightContentBox2 {
+        grid-area: rightContentBox;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+        margin-top: 2px;
+        margin-left: 5px;
+        padding: 20px;
+        width: auto;
+        height: auto;
+        font-size: 18px;
+        opacity: 0.95;
+        z-index: 1;
+    }
+
+
+/* End of page setup*/
+
+
 .introBox {
+    background-color: #cccccc;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: 97%;
+    width: 85%;
     height: auto;
+}
+
+.centralBox {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 80%;
 }
 
 .restrictedTextBox {
-    flex: 1;
-    background-color: white;
+    /*flex: 1;*/
+    background-color: #f1f1f1;
+    border-radius: 10px;
     margin-top: 2px;
-    margin-left: 50px;
-    width: 800px;
+    margin-left: 5px;
+    padding: 50px;
+    width: auto;
     height: auto;
-    font-size: 28px;
-    text-align: justify;
+    font-size: 18px;
 }
 
 .imageBox {
-    flex: 1;
-    margin-left: 150px;
+    /*flex: 1;*/
+    margin-left: 5px;
     height: 100%;
+}
+
+.imageBox2 {
+    flex: 1;
+    max-width: 95%;
+    height: auto;
 }
 
 .textBox {
@@ -145,7 +307,7 @@ nav a:hover {
 
 .expertise {
     display:flex;
-    width: 97%;
+    width: auto;
     height: auto;
     justify-content: space-between;
     align-items: center;
@@ -162,12 +324,12 @@ ul {
     color: white;
     border-radius: 7px;
     margin-top: 20px;
-    margin-left: 50px;
+    margin-left: 20px;
     width: 360px;
     height: 200px;
     flex-grow: 1;
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 capabilitiesTextBox:hover {
@@ -185,11 +347,10 @@ capabilitiesTextBox:hover {
 }
 
 
-.footer {
+.footerNotice {
     width: 100%;
     left: 0px;
     height: auto;
-    margin-top: 50px;
     display: flex;
     background-color: lightgray;
     border-radius: 7px;
@@ -231,33 +392,6 @@ capabilitiesTextBox:hover {
     margin-left: 20px;
 }
 
-/* form button config */
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 7px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-    background-color: #ff0070;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 7px;
-    cursor: pointer;
-}
-
-    /* When moving the mouse over the submit button, add a darker green color */
-    input[type=submit]:hover {
-        background-color: #0000ff;
-    }
 
 /* Add a background color and some padding around the form */
 .contact {
@@ -269,15 +403,16 @@ input[type=submit] {
 
 }
 
-.container {
+.contactContainer {
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.8);
     width: 50%;
-    margin-top: 100px;
     border-radius: 7px;
     background-color: #000070;
     padding: 20px;
 }
 
-.container1 {
+
+.thanksContainer {
     width: 100%;
     margin-top: 100px;
     border-radius: 7px;
@@ -285,3 +420,4 @@ input[type=submit] {
     font-size: 38px;
     text-align: center;
 }
+
