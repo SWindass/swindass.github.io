@@ -160,8 +160,6 @@ nav a:hover {
     display: grid;
     grid-template-areas:
         "leftContentBox rightContentBox"
-        "leftContentBox1 rightContentBox1"
-        "leftContentBox2 rightContentBox2";
     grid-template-columns: 1fr 1fr;
     gap: 5px;
     background-color: #ffffff;
