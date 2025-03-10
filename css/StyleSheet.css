@@ -1,7 +1,7 @@
 ﻿body {
     padding-top: 100px;
     font-family: 'Segoe UI Variable Text'; 
-    color: #000070;
+    color: #323b56;
 }
 
 .title {
@@ -31,7 +31,7 @@
 .button {
     border: none;
     color: white;
-    background-color: #000070;
+    background-color: #323b56;
     padding: 16px 32px;
     text-align: center;
     font-size: 16px;
@@ -41,42 +41,67 @@
 }
 
 button:hover {
-    background-color: #FF0070;
-    border-color: #FF0070;
-    color: #000070;
+    background-color: #ff82c1;
+    border-color: #ff82c1;
+    color: #323b56;
     box-shadow: none;
 }
 
 .navbar {
-    background: linear-gradient(to bottom, #000070 0%, #000000 100%);
+    background: linear-gradient(to bottom, #323b56 0%, #000000 100%);
     width: 100%;
+    height: auto;
     overflow: auto;
     display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 40px;
+    justify-content: space-evenly;
+    align-items: last baseline;
+    padding: 10px;
 }
 
 .navMenu {
     display: flex;
-    margin-right: 50px;
+    margin-right: 10px;
 }
 
 nav a {
     color: #ffffff;
     text-align: center;
     padding: 10px;
-    padding-left: 30px;
+    padding-left: 10px;
     padding-right: 30px;
     text-decoration: none;
     display: block;
     width: auto;
+    position: relative;
 }
 
 nav a:hover {
     border-radius: 7px;
-    background-color: #FF0070;
-    color: #000070;
+    background-color: #FF82c1;
+    color: #323b56;
+}
+
+.nav .logo {
+    display: block;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+}
+
+nav a.logo {
+    background-color: transparent; /* Ensure the background of the logo stays transparent */
+}
+
+nav a.logo:hover {
+    background-color: transparent; /* Prevent hover color from affecting the logo */
+}
+
+.mobilePageHeader {
+    display: none;
+}
+
+.mobileTitle {
+    display:none;
 }
 
 .contactBar {
@@ -97,7 +122,7 @@ nav a:hover {
 }
 
 .header1 {
-    color: #000070;
+    color: #323b56;
     margin-top: 10px;
     font-size: 48px;
     text-align: center;
@@ -261,7 +286,7 @@ ul {
 }
 
 .capabilitiesTextBox {
-    background-color: #000070;
+    background-color: #323b56;
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.8);
     color: white;
     border-radius: 7px;
@@ -275,7 +300,7 @@ ul {
 }
 
 capabilitiesTextBox:hover {
-    background-color: #FF0070;
+    background-color: #ff82c1;
 }
 
 .p {
@@ -290,12 +315,16 @@ capabilitiesTextBox:hover {
 
 
 .footerNotice {
+    background: linear-gradient(to bottom, #323b56 0%, #000000 100%);
     width: 100%;
-    left: 0px;
     height: auto;
+    left: 10px;
     display: flex;
-    background-color: lightgray;
     border-radius: 7px;
+}
+
+.footerNotice p{
+    color:white;
 }
 
 .divider1 {
@@ -348,7 +377,7 @@ capabilitiesTextBox:hover {
     box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.8);
     width: 50%;
     border-radius: 7px;
-    background-color: #000070;
+    background-color: #323b56;
     padding: 20px;
 }
 
