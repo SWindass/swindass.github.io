@@ -1,0 +1,341 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\sitemap.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:sitemap.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\EMCCompliance.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:EMCCompliance.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\PCBLayout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PCBLayout.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\SchematicCapture.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SchematicCapture.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\DesignForX.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DesignForX.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\header.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:header.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ntronIQ_website\\MarconiElectronics.sln||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\CNAME||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:CNAME||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\contact_old.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contact_old.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\careers.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:careers.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\blog.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:blog.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\.vs\\MarconiElectronics\\config\\applicationhost.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.vs\\MarconiElectronics\\config\\applicationhost.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\thanks.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:thanks.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\DesignExpertise.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DesignExpertise.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\css\\MobileStyleSheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\MobileStyleSheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\steve\\source\\repos\\swindass.github.io\\css\\StyleSheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:css\\StyleSheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 311,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "about.html",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\about.html",
+              "RelativeDocumentMoniker": "about.html",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\about.html",
+              "RelativeToolTip": "about.html",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-17T11:13:35.472Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DesignForX.html",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\DesignForX.html",
+              "RelativeDocumentMoniker": "DesignForX.html",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\DesignForX.html",
+              "RelativeToolTip": "DesignForX.html",
+              "ViewState": "AQIAAGEAAAAAAAAAAAAgwHYAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-17T11:13:35.475Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EMCCompliance.html",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\EMCCompliance.html",
+              "RelativeDocumentMoniker": "EMCCompliance.html",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\EMCCompliance.html",
+              "RelativeToolTip": "EMCCompliance.html",
+              "ViewState": "AgIAACcAAAAAAAAAAAAAABsAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-17T11:13:35.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "sitemap.xml",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\sitemap.xml",
+              "RelativeDocumentMoniker": "sitemap.xml",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\sitemap.xml",
+              "RelativeToolTip": "sitemap.xml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAB4AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-03-17T11:13:35.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SchematicCapture.html",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\SchematicCapture.html",
+              "RelativeDocumentMoniker": "SchematicCapture.html",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\SchematicCapture.html",
+              "RelativeToolTip": "SchematicCapture.html",
+              "ViewState": "AQIAADUAAAAAAAAAAAAgwEoAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-17T11:13:35.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PCBLayout.html",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\PCBLayout.html",
+              "RelativeDocumentMoniker": "PCBLayout.html",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\PCBLayout.html",
+              "RelativeToolTip": "PCBLayout.html",
+              "ViewState": "AQIAADwAAAAAAAAAAAAgwFEAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-17T11:13:35.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "contact.html",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\contact.html",
+              "RelativeDocumentMoniker": "contact.html",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\contact.html",
+              "RelativeToolTip": "contact.html",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAgwDMAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-17T11:13:35.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "header.html",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\header.html",
+              "RelativeDocumentMoniker": "header.html",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\header.html",
+              "RelativeToolTip": "header.html",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAADUAAACPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-17T11:13:35.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAHMAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-17T11:13:35.481Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MarconiElectronics.sln",
+              "DocumentMoniker": "E:\\ntronIQ_website\\MarconiElectronics.sln",
+              "ToolTip": "E:\\ntronIQ_website\\MarconiElectronics.sln",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABcAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002855|",
+              "WhenOpened": "2025-03-17T11:13:35.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CNAME",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\CNAME",
+              "RelativeDocumentMoniker": "CNAME",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\CNAME",
+              "RelativeToolTip": "CNAME",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-17T11:13:35.486Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "contact_old.html",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\contact_old.html",
+              "RelativeDocumentMoniker": "contact_old.html",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\contact_old.html",
+              "RelativeToolTip": "contact_old.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-17T11:13:35.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "careers.html",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\careers.html",
+              "RelativeDocumentMoniker": "careers.html",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\careers.html",
+              "RelativeToolTip": "careers.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-17T11:13:35.49Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "blog.html",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\blog.html",
+              "RelativeDocumentMoniker": "blog.html",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\blog.html",
+              "RelativeToolTip": "blog.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-17T11:13:35.492Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "applicationhost.config",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\.vs\\MarconiElectronics\\config\\applicationhost.config",
+              "RelativeDocumentMoniker": ".vs\\MarconiElectronics\\config\\applicationhost.config",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\.vs\\MarconiElectronics\\config\\applicationhost.config",
+              "RelativeToolTip": ".vs\\MarconiElectronics\\config\\applicationhost.config",
+              "ViewState": "AQIAAJAAAAAAAAAAAAAgwKQAAABjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-03-17T11:13:35.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "thanks.html",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\thanks.html",
+              "RelativeDocumentMoniker": "thanks.html",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\thanks.html",
+              "RelativeToolTip": "thanks.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-17T11:13:35.495Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 291,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "DesignExpertise.html",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\DesignExpertise.html",
+              "RelativeDocumentMoniker": "DesignExpertise.html",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\DesignExpertise.html",
+              "RelativeToolTip": "DesignExpertise.html",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-03-17T11:13:35.5Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MobileStyleSheet.css",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\css\\MobileStyleSheet.css",
+              "RelativeDocumentMoniker": "css\\MobileStyleSheet.css",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\css\\MobileStyleSheet.css",
+              "RelativeToolTip": "css\\MobileStyleSheet.css",
+              "ViewState": "AQIAAG4AAAAAAAAAAAAgwIkAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-17T11:13:35.501Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "StyleSheet.css",
+              "DocumentMoniker": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\css\\StyleSheet.css",
+              "RelativeDocumentMoniker": "css\\StyleSheet.css",
+              "ToolTip": "C:\\Users\\steve\\source\\repos\\swindass.github.io\\css\\StyleSheet.css",
+              "RelativeToolTip": "css\\StyleSheet.css",
+              "ViewState": "AgIAAFsBAAAAAAAAAAAowIQBAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-17T11:13:35.503Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 99,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
