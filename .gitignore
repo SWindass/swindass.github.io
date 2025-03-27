@@ -1,0 +1,24 @@
+# Ignore Visual Studio temporary files, build results, and folders
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore Visual Studio Code settings files
+.vscode/
+
+# Ignore Visual Studio folder
+.vs/
+
+# Ignore build output folders
+bin/
+obj/
+out/
+
+# Ignore backup files
+*.bak
+
+# Ignore other temporary or cache files
+*.tmp
+*.log
+*.vsidx
