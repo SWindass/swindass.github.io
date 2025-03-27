@@ -54,7 +54,7 @@ button:hover {
     overflow: auto;
     display: flex;
     justify-content: space-evenly;
-    align-items: last baseline;
+    align-items:last baseline;
     padding: 10px;
 }
 
