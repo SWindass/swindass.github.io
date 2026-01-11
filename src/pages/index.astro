@@ -1,0 +1,76 @@
+---
+import Layout from '../layouts/Layout.astro';
+import ServiceCard from '../components/ServiceCard.astro';
+
+const services = [
+  { title: 'DESIGN', href: '/services/design', icon: 'circuit' },
+  { title: 'SCHEMATIC', href: '/services/schematic', icon: 'schematic' },
+  { title: 'PCB LAYOUT', href: '/services/pcb', icon: 'pcb' },
+  { title: 'EMC', href: '/services/emc', icon: 'emc' },
+  { title: 'DESIGN for X', href: '/services/dfx', icon: 'dfx' },
+];
+---
+
+<Layout title="PCB Electronic Design Services">
+  <!-- Hero Section -->
+  <section class="bg-gradient-to-br from-navy to-navy-dark py-12 md:py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight">
+        PCB Electronic Design Services
+      </h1>
+      <p class="mt-4 text-lg md:text-xl text-gray-300 max-w-2xl mx-auto">
+        Solving difficult problems quickly to get your products to market fast
+      </p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16">
+    <div class="reveal max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-lg leading-relaxed text-navy">
+        ntronIQ provide an electronics hardware design service.
+      </p>
+      <p class="mt-4 text-lg leading-relaxed text-navy">
+        Providing high quality technical solutions at all stages of the development
+        lifecycle; from initial concept to final design.
+      </p>
+      <p class="mt-4 text-lg leading-relaxed text-navy">
+        Our services including designing, building and testing prototypes and all aspects of compliance.
+      </p>
+      <p class="mt-4 text-lg leading-relaxed text-navy">
+        Expert in electronic design, including; requirements definition,
+        schematic capture, PCB layout, compliance, EMC, prototyping and testing.
+      </p>
+      <p class="mt-4 text-lg leading-relaxed text-navy">
+        ntronIQ will work with PCB vendors to provide PCBs in the volumes required.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="reveal-stagger grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+        {services.map((service) => (
+          <ServiceCard title={service.title} href={service.href} icon={service.icon} />
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact CTA Section -->
+  <section class="py-16 bg-navy">
+    <div class="reveal max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold text-white mb-6">Ready to start your project?</h2>
+      <p class="text-lg text-gray-300 mb-8">
+        Get in touch with us to discuss your electronics design requirements.
+      </p>
+      <a
+        href="/contact"
+        class="inline-block bg-pink text-navy px-8 py-4 rounded-lg font-bold text-lg hover:bg-pink-light transition-colors"
+      >
+        Contact Us
+      </a>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,73 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+---
+
+<Layout title="Emergency Light Tester App" description="Professional emergency light testing app for Android. Track and manage your emergency lighting compliance testing.">
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="reveal text-4xl font-bold text-navy mb-4">Emergency Light Tester</h1>
+
+      <div class="reveal">
+        <p class="text-xl text-gray-600 mb-8">
+          Professional emergency light testing app for Android. Streamline your compliance testing workflow.
+        </p>
+        <a
+          href="https://play.google.com/store/apps/details?id=com.ntroniq.emergencylighttester"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-block"
+        >
+          <img
+            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+            alt="Get it on Google Play"
+            class="h-16"
+          />
+        </a>
+      </div>
+
+      <h2 class="reveal text-2xl font-bold text-navy mt-12 mb-6">See it in action</h2>
+
+      <div class="reveal rounded-xl overflow-hidden shadow-xl bg-black mb-12">
+        <video
+          controls
+          class="w-full"
+          poster="/images/app-poster.jpg"
+        >
+          <source src="/videos/EmergencyLight.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <h2 class="reveal text-2xl font-bold text-navy mb-6">Features</h2>
+
+      <div class="reveal space-y-6 mb-12">
+        <div>
+          <h3 class="text-xl font-bold text-navy mb-2">Test Tracking</h3>
+          <p class="text-lg text-gray-600">Record and track all your emergency light tests with detailed results and timestamps.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-navy mb-2">Location Management</h3>
+          <p class="text-lg text-gray-600">Organize tests by location and zones for easy management of multiple sites.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold text-navy mb-2">Report Generation</h3>
+          <p class="text-lg text-gray-600">Generate professional compliance reports with tester signatures.</p>
+        </div>
+      </div>
+
+      <h2 class="reveal text-2xl font-bold text-navy mb-4">Your Data Stays Private</h2>
+
+      <div class="reveal">
+        <p class="text-lg text-gray-600 mb-4">
+          All your data is stored locally on your device. We don't collect or transmit your test data to any servers.
+        </p>
+        <a
+          href="/apps/emergency-light-tester/privacy"
+          class="text-pink hover:text-pink-light font-medium transition-colors"
+        >
+          Read our Privacy Policy &rarr;
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

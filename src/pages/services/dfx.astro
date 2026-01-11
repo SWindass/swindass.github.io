@@ -1,0 +1,47 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const dfxItems = [
+  {
+    title: 'Design for Manufacture',
+    description: 'PCBs are designed to provide ease of manufacture, minimising manufacturing defects to improve quality and lower cost.'
+  },
+  {
+    title: 'Design for Test',
+    description: 'PCBs incorporate automated testing (where required), including: Self-Test, In-circuit testing (ICT), and Automated Optical Inspection (AOI).'
+  },
+  {
+    title: 'Design for Reliability',
+    description: 'Reliability requirements are analysed and validated using MTBF calculations (Mean Time Between Failure) and FMEA Analysis (Failure Mode and Effects).'
+  },
+  {
+    title: 'Design for Quality',
+    description: 'Quality has a direct impact on the product\'s success. Manufacturing costs are reduced by improving yields, through careful design with appropriate technologies. Quality checks are incorporated at all stages of our process.'
+  },
+  {
+    title: 'Design for Sustainability',
+    description: 'We aim to reduce the carbon footprint as much as possible, through careful component selection utilising recycled materials and green manufacturing processes where possible.'
+  },
+  {
+    title: 'Design for Cost',
+    description: 'All aspects of cost are considered for every design. Including the development cost and the ongoing cost of production. Individual component costs and component availability are considered at this stage - minimising manufacturing delays.'
+  }
+];
+---
+
+<Layout title="Design for X">
+  <section class="py-16">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h1 class="reveal text-4xl font-bold text-navy mb-8">Design for X</h1>
+
+      <div class="reveal space-y-8">
+        {dfxItems.map((item) => (
+          <div>
+            <h2 class="text-xl font-bold text-navy mb-2">{item.title}</h2>
+            <p class="text-lg leading-relaxed text-navy">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+</Layout>

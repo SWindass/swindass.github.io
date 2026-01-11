@@ -1,0 +1,168 @@
+---
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/services/design', label: 'Services' },
+  { href: '/services/pcb', label: 'PCBs' },
+  { href: '/services/schematic', label: 'Schematics' },
+  { href: '/services/emc', label: 'EMC' },
+  { href: '/services/dfx', label: 'Design for X' },
+  { href: '/about', label: 'About' },
+];
+---
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+  <nav class="bg-gradient-to-b from-navy to-navy-dark">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="/" class="flex-shrink-0">
+          <img src="/images/Website_logo.png" alt="ntronIQ" class="h-12 w-auto">
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center space-x-1">
+          {navLinks.map((link) => (
+            <a
+              href={link.href}
+              class="text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-pink hover:text-navy transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
+        </div>
+
+        <!-- Contact Button (Desktop) -->
+        <div class="hidden lg:block">
+          <a
+            href="/contact"
+            class="bg-navy text-white px-6 py-3 rounded-lg font-medium hover:bg-pink hover:text-navy transition-colors border-2 border-white"
+          >
+            Contact Us
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button
+          id="mobile-menu-button"
+          class="lg:hidden text-white p-2"
+          aria-label="Open menu"
+        >
+          <svg class="w-7 h-7 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- Mobile Menu Backdrop -->
+<div id="mobile-backdrop" class="mobile-backdrop"></div>
+
+<!-- Slide-in Mobile Menu -->
+<div id="mobile-menu" class="mobile-drawer">
+  <!-- Close Button -->
+  <button
+    id="mobile-menu-close"
+    class="absolute top-5 right-5 text-gold hover:text-pink transition-colors p-2"
+    aria-label="Close menu"
+  >
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+  </button>
+
+  <nav class="flex flex-col pt-16 px-6">
+    {navLinks.map((link) => (
+      <a
+        href={link.href}
+        class="mobile-nav-link text-lg font-medium text-white hover:text-pink transition-colors py-3 border-b border-white/10"
+      >
+        {link.label}
+      </a>
+    ))}
+    <a
+      href="/contact"
+      class="mt-6 bg-pink text-navy px-6 py-3 text-lg font-bold rounded-lg text-center hover:bg-gold transition-colors"
+    >
+      Contact Us
+    </a>
+  </nav>
+</div>
+
+<!-- Spacer for fixed header -->
+<div class="h-20"></div>
+
+<script>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenuClose = document.getElementById('mobile-menu-close');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const mobileBackdrop = document.getElementById('mobile-backdrop');
+  const body = document.body;
+
+  function openMenu() {
+    mobileMenu?.classList.add('open');
+    mobileBackdrop?.classList.add('open');
+    body.style.overflow = 'hidden';
+  }
+
+  function closeMenu() {
+    mobileMenu?.classList.remove('open');
+    mobileBackdrop?.classList.remove('open');
+    body.style.overflow = '';
+  }
+
+  mobileMenuButton?.addEventListener('click', openMenu);
+  mobileMenuClose?.addEventListener('click', closeMenu);
+  mobileBackdrop?.addEventListener('click', closeMenu);
+
+  // Close menu when clicking a link
+  const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+  mobileNavLinks.forEach(link => {
+    link.addEventListener('click', closeMenu);
+  });
+
+  // Close menu on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && mobileMenu?.classList.contains('open')) {
+      closeMenu();
+    }
+  });
+</script>
+
+<style>
+  /* Backdrop */
+  .mobile-backdrop {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 55;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .mobile-backdrop.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  /* Slide-in drawer */
+  .mobile-drawer {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 280px;
+    max-width: 80vw;
+    background: linear-gradient(180deg, #323b56 0%, #1a1f2e 100%);
+    z-index: 60;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    box-shadow: -4px 0 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .mobile-drawer.open {
+    transform: translateX(0);
+  }
+</style>
