@@ -2,72 +2,377 @@
 import Layout from '../../../layouts/Layout.astro';
 ---
 
-<Layout title="Emergency Light Tester App" description="Professional emergency light testing app for Android. Track and manage your emergency lighting compliance testing.">
+<Layout title="Emergency Light Test App" description="Simplify your emergency lighting compliance testing with our Android app. BS 5266-1 compliant testing, test history tracking, and professional PDF reports.">
   <section class="py-16">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-      <h1 class="reveal text-4xl font-bold text-navy mb-4">Emergency Light Tester</h1>
+      <!-- Hero with App Icon -->
+      <div class="reveal flex items-center gap-6 mb-6">
+        <img
+          src="/images/apps/emergency-light-tester/EmergencyLight_Icon.png"
+          alt="Emergency Light Test App Icon"
+          class="w-24 h-24 rounded-2xl shadow-lg"
+        />
+        <h1 class="text-4xl font-bold text-navy">Emergency Light Test</h1>
+      </div>
 
       <div class="reveal">
-        <p class="text-xl text-gray-600 mb-8">
-          Professional emergency light testing app for Android. Streamline your compliance testing workflow.
+        <p class="text-xl text-gray-600 mb-4">
+          Simplify your emergency lighting compliance testing with our easy-to-use Android app.
         </p>
-        <a
-          href="https://play.google.com/store/apps/details?id=com.ntroniq.emergencylighttester"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-block"
-        >
-          <img
-            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-            alt="Get it on Google Play"
-            class="h-16"
-          />
-        </a>
-      </div>
-
-      <h2 class="reveal text-2xl font-bold text-navy mt-12 mb-6">See it in action</h2>
-
-      <div class="reveal rounded-xl overflow-hidden shadow-xl bg-black mb-12">
-        <video
-          controls
-          class="w-full"
-          poster="/images/app-poster.jpg"
-        >
-          <source src="/videos/EmergencyLight.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-
-      <h2 class="reveal text-2xl font-bold text-navy mb-6">Features</h2>
-
-      <div class="reveal space-y-6 mb-12">
-        <div>
-          <h3 class="text-xl font-bold text-navy mb-2">Test Tracking</h3>
-          <p class="text-lg text-gray-600">Record and track all your emergency light tests with detailed results and timestamps.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-navy mb-2">Location Management</h3>
-          <p class="text-lg text-gray-600">Organize tests by location and zones for easy management of multiple sites.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold text-navy mb-2">Report Generation</h3>
-          <p class="text-lg text-gray-600">Generate professional compliance reports with tester signatures.</p>
-        </div>
-      </div>
-
-      <h2 class="reveal text-2xl font-bold text-navy mb-4">Your Data Stays Private</h2>
-
-      <div class="reveal">
-        <p class="text-lg text-gray-600 mb-4">
-          All your data is stored locally on your device. We don't collect or transmit your test data to any servers.
+        <p class="text-lg leading-relaxed text-navy mb-8">
+          Emergency Light Test guides you through BS 5266-1 compliant testing procedures, tracks your test history, and generates professional PDF reports ready to email.
         </p>
-        <a
-          href="/apps/emergency-light-tester/privacy"
-          class="text-pink hover:text-pink-light font-medium transition-colors"
-        >
-          Read our Privacy Policy &rarr;
+      </div>
+
+      <!-- Screenshot Gallery -->
+      <div class="reveal mt-8">
+        <div class="grid grid-cols-3 md:grid-cols-6 gap-3">
+          <img src="/images/apps/emergency-light-tester/01_home.png" alt="Home screen" class="screenshot rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform" />
+          <img src="/images/apps/emergency-light-tester/02_settings.png" alt="Settings" class="screenshot rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform" />
+          <img src="/images/apps/emergency-light-tester/03_zones.png" alt="Configure zones" class="screenshot rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform" />
+          <img src="/images/apps/emergency-light-tester/04_zone_check.png" alt="Zone check" class="screenshot rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform" />
+          <img src="/images/apps/emergency-light-tester/05_results.png" alt="Test results" class="screenshot rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform" />
+          <img src="/images/apps/emergency-light-tester/06_pdf_report.png" alt="PDF report" class="screenshot rounded-lg shadow-md cursor-pointer hover:scale-105 transition-transform" />
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div id="lightbox" class="lightbox">
+        <button id="lightbox-close" class="lightbox-close">&times;</button>
+        <button id="lightbox-prev" class="lightbox-nav lightbox-prev">&#10094;</button>
+        <img id="lightbox-img" src="" alt="" class="lightbox-img" />
+        <button id="lightbox-next" class="lightbox-nav lightbox-next">&#10095;</button>
+      </div>
+
+      <!-- Key Features -->
+      <div class="reveal mt-12">
+        <h2 class="text-2xl font-bold text-navy mb-6">Key Features</h2>
+        <ul class="space-y-3 text-lg text-navy">
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Two-stage testing process</strong> - Follows the standard initial check → timed duration → final check workflow</span></li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Multiple locations</strong> - Manage tests across different buildings or sites</span></li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Customisable zones</strong> - Configure test zones to match your premises layout</span></li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Background timer</strong> - Continue using your phone while the test runs with reliable alarm notifications</span></li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>PDF reports</strong> - Generate professional test certificates with your signature</span></li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Test history</strong> - View past results and regenerate reports when needed</span></li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Compliance tracking</strong> - Visual indicators show when monthly and annual tests are due</span></li>
+        </ul>
+      </div>
+
+      <!-- How It Works -->
+      <div class="reveal mt-12">
+        <h2 class="text-2xl font-bold text-navy mb-6">How It Works</h2>
+
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-xl font-bold text-navy mb-2">1. Set Up Your Location</h3>
+            <p class="text-lg leading-relaxed text-navy">
+              Go to Settings and add your location (building name and address). Then configure the zones you need to test - these might be floors, areas, or rooms depending on your premises.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold text-navy mb-2">2. Configure Test Settings</h3>
+            <p class="text-lg leading-relaxed text-navy mb-2">Choose your test type:</p>
+            <ul class="space-y-2 text-lg text-navy ml-4">
+              <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Monthly functional test</strong> - Quick check that all luminaires illuminate</span></li>
+              <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Annual full duration test</strong> - 3-hour test (or 1-hour where conditions permit)</span></li>
+            </ul>
+            <p class="text-lg leading-relaxed text-navy mt-3">
+              Add your name and signature for the test certificate.
+            </p>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold text-navy mb-2">3. Run the Test</h3>
+
+            <div class="space-y-4 ml-4">
+              <div>
+                <h4 class="text-lg font-bold text-navy">Initial Check</h4>
+                <p class="text-lg leading-relaxed text-navy">
+                  Walk through each zone and verify all emergency luminaires illuminate when the test switch is activated. Mark each zone as Pass or Fail.
+                </p>
+              </div>
+
+              <div>
+                <h4 class="text-lg font-bold text-navy">Timed Duration</h4>
+                <p class="text-lg leading-relaxed text-navy">
+                  For duration tests, the app starts a timer. You'll receive a notification when it's time to return. The timer continues even if you close the app.
+                </p>
+              </div>
+
+              <div>
+                <h4 class="text-lg font-bold text-navy">Final Check</h4>
+                <p class="text-lg leading-relaxed text-navy">
+                  Return to each zone and verify luminaires are still illuminated at the required level. Record your results.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-xl font-bold text-navy mb-2">4. Generate Your Report</h3>
+            <p class="text-lg leading-relaxed text-navy">
+              Once complete, view your PDF test certificate, save it, or email it directly to your records system.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Test Frequencies -->
+      <div class="reveal mt-12">
+        <h2 class="text-2xl font-bold text-navy mb-4">Test Frequencies</h2>
+        <p class="text-lg leading-relaxed text-navy mb-4">BS 5266-1 requires:</p>
+        <ul class="space-y-2 text-lg text-navy mb-6">
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Monthly</strong> - Brief functional test to check all luminaires operate</span></li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Annual</strong> - Full rated duration test (typically 3 hours)</span></li>
+        </ul>
+        <p class="text-lg leading-relaxed text-navy mb-3">The app tracks your test dates and shows clear status indicators:</p>
+        <ul class="space-y-2 text-lg text-navy">
+          <li class="flex items-center"><span class="mr-3">🟢</span> <span><strong>Green</strong> - Test up to date</span></li>
+          <li class="flex items-center"><span class="mr-3">🟠</span> <span><strong>Amber</strong> - Test due soon</span></li>
+          <li class="flex items-center"><span class="mr-3">🔴</span> <span><strong>Red</strong> - Test overdue</span></li>
+        </ul>
+      </div>
+
+      <!-- Why Documentation Matters -->
+      <div class="reveal mt-12">
+        <h2 class="text-2xl font-bold text-navy mb-4">Why Documentation Matters</h2>
+        <p class="text-lg leading-relaxed text-navy mb-6">
+          Under the Regulatory Reform (Fire Safety) Order 2005, the "Responsible Person" for a premises must ensure emergency lighting is properly maintained and keep records of all testing.
+        </p>
+
+        <h3 class="text-xl font-bold text-navy mb-4">Consequences of Poor Documentation</h3>
+
+        <div class="space-y-4 mb-6">
+          <div>
+            <h4 class="text-lg font-bold text-navy">Enforcement Action</h4>
+            <p class="text-lg leading-relaxed text-navy">
+              Fire and Rescue Authorities can issue enforcement notices, prohibition notices, or prosecute where fire safety obligations aren't met. Fines can be unlimited, and in serious cases, responsible individuals can face imprisonment.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold text-navy">Insurance Implications</h4>
+            <p class="text-lg leading-relaxed text-navy">
+              Insurers typically require evidence of regular fire safety maintenance. Without proper test records, claims may be rejected following an incident - leaving you personally or commercially liable.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-bold text-navy">Civil Liability</h4>
+            <p class="text-lg leading-relaxed text-navy">
+              If someone is injured during an evacuation and your emergency lighting fails, inadequate maintenance records make it extremely difficult to demonstrate you took reasonable precautions. This exposure applies to both personal injury claims and corporate manslaughter proceedings.
+            </p>
+          </div>
+        </div>
+
+        <h3 class="text-xl font-bold text-navy mb-4">What Inspectors Look For</h3>
+        <p class="text-lg leading-relaxed text-navy mb-3">Fire safety auditors and insurance assessors expect to see:</p>
+        <ul class="space-y-2 text-lg text-navy mb-6">
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> Regular monthly functional test records</li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> Annual full duration test certificates</li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> Evidence that faults were identified and rectified</li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> Clear identification of who conducted each test</li>
+        </ul>
+        <p class="text-lg leading-relaxed text-navy">
+          Emergency Light Test creates timestamped, signed PDF reports that satisfy these requirements - giving you audit-ready documentation at the touch of a button.
+        </p>
+      </div>
+
+      <!-- Download -->
+      <div class="reveal mt-12 text-center">
+        <h2 class="text-2xl font-bold text-navy mb-6">Download</h2>
+        <p class="text-lg text-navy mb-8">Available on Google Play for Android devices.</p>
+
+        <div class="flex flex-col items-center justify-center gap-6">
+          <!-- Google Play Badge -->
+          <a
+            href="https://play.google.com/store/apps/details?id=com.ntroniq.emergencylighttest.free"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block"
+          >
+            <img
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+              alt="Get it on Google Play"
+              class="h-20"
+            />
+          </a>
+
+          <!-- QR Code in Android Phone Frame -->
+          <div class="phone-frame">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://play.google.com/store/apps/details?id=com.ntroniq.emergencylighttest.free"
+                alt="QR Code to download app"
+                class="w-full h-full"
+              />
+            </div>
+            <p class="text-xs text-gray-500 mt-2">Scan to download</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Privacy Link -->
+      <div class="reveal mt-8 text-center">
+        <a href="/apps/emergency-light-tester/privacy" class="text-pink hover:text-pink-light transition-colors">
+          Privacy Policy
         </a>
       </div>
     </div>
   </section>
 </Layout>
+
+<style>
+  .phone-frame {
+    display: inline-block;
+    background: linear-gradient(145deg, #2d2d2d 0%, #1a1a1a 100%);
+    border-radius: 24px;
+    padding: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  }
+
+  .phone-notch {
+    width: 60px;
+    height: 6px;
+    background: #1a1a1a;
+    border-radius: 3px;
+    margin: 0 auto 6px;
+  }
+
+  .phone-screen {
+    width: 150px;
+    height: 150px;
+    background: white;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+
+  /* Lightbox */
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  .lightbox.open {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .lightbox-img {
+    max-height: 90vh;
+    max-width: 90vw;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+  }
+
+  .lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 40px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  .lightbox-close:hover {
+    opacity: 1;
+  }
+
+  .lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 16px 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    opacity: 0.7;
+    transition: opacity 0.2s, background 0.2s;
+  }
+
+  .lightbox-nav:hover {
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  .lightbox-prev {
+    left: 20px;
+  }
+
+  .lightbox-next {
+    right: 20px;
+  }
+</style>
+
+<script>
+  const screenshots = document.querySelectorAll('.screenshot');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img') as HTMLImageElement;
+  const lightboxClose = document.getElementById('lightbox-close');
+  const lightboxPrev = document.getElementById('lightbox-prev');
+  const lightboxNext = document.getElementById('lightbox-next');
+
+  let currentIndex = 0;
+  const images = Array.from(screenshots) as HTMLImageElement[];
+
+  function openLightbox(index: number) {
+    currentIndex = index;
+    lightboxImg.src = images[index].src;
+    lightboxImg.alt = images[index].alt;
+    lightbox?.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeLightbox() {
+    lightbox?.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function showPrev() {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+    lightboxImg.alt = images[currentIndex].alt;
+  }
+
+  function showNext() {
+    currentIndex = (currentIndex + 1) % images.length;
+    lightboxImg.src = images[currentIndex].src;
+    lightboxImg.alt = images[currentIndex].alt;
+  }
+
+  screenshots.forEach((img, index) => {
+    img.addEventListener('click', () => openLightbox(index));
+  });
+
+  lightboxClose?.addEventListener('click', closeLightbox);
+  lightboxPrev?.addEventListener('click', showPrev);
+  lightboxNext?.addEventListener('click', showNext);
+
+  lightbox?.addEventListener('click', (e) => {
+    if (e.target === lightbox) closeLightbox();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox?.classList.contains('open')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') showPrev();
+    if (e.key === 'ArrowRight') showNext();
+  });
+</script>

@@ -8,6 +8,10 @@ const navLinks = [
   { href: '/services/dfx', label: 'Design for X' },
   { href: '/about', label: 'About' },
 ];
+
+const products = [
+  { href: '/apps/emergency-light-tester', label: 'Emergency Light Test', description: 'BS 5266-1 compliance testing app' },
+];
 ---
 
 <header class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
@@ -29,6 +33,27 @@ const navLinks = [
               {link.label}
             </a>
           ))}
+
+          <!-- Products Dropdown -->
+          <div class="relative group">
+            <button class="text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-pink hover:text-navy transition-colors flex items-center gap-1">
+              Products
+              <svg class="w-4 h-4 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="absolute top-full left-0 mt-1 w-64 bg-white rounded-lg shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
+              {products.map((product) => (
+                <a
+                  href={product.href}
+                  class="block px-4 py-3 hover:bg-gray-50 first:rounded-t-lg last:rounded-b-lg"
+                >
+                  <span class="block text-navy font-medium">{product.label}</span>
+                  <span class="block text-sm text-gray-500">{product.description}</span>
+                </a>
+              ))}
+            </div>
+          </div>
         </div>
 
         <!-- Contact Button (Desktop) -->
@@ -81,6 +106,22 @@ const navLinks = [
         {link.label}
       </a>
     ))}
+
+    <!-- Products Section -->
+    <div class="py-3 border-b border-white/10">
+      <span class="text-gold text-sm font-semibold uppercase tracking-wider">Products</span>
+      <div class="mt-2 space-y-1">
+        {products.map((product) => (
+          <a
+            href={product.href}
+            class="mobile-nav-link block text-white hover:text-pink transition-colors py-2 pl-3"
+          >
+            {product.label}
+          </a>
+        ))}
+      </div>
+    </div>
+
     <a
       href="/contact"
       class="mt-6 bg-pink text-navy px-6 py-3 text-lg font-bold rounded-lg text-center hover:bg-gold transition-colors"
