@@ -7,9 +7,58 @@ import BackToTop from '../components/BackToTop.astro';
 interface Props {
   title: string;
   description?: string;
+  canonicalUrl?: string;
 }
 
-const { title, description = 'Electronics design services. Get your PCB to market fast' } = Astro.props;
+const { title, description = 'Professional PCB electronic design services in the UK. Expert schematic capture, PCB layout, EMC compliance and prototyping.' } = Astro.props;
+
+const siteUrl = 'https://www.ntroniq.com';
+const canonicalUrl = Astro.props.canonicalUrl || new URL(Astro.url.pathname, siteUrl).toString();
+const ogImage = `${siteUrl}/images/Website_logo.png`;
+
+// LocalBusiness structured data
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "ntronIQ",
+  "description": "Professional PCB electronic design services including schematic capture, PCB layout, EMC compliance, and prototyping.",
+  "url": siteUrl,
+  "logo": `${siteUrl}/images/Website_logo.png`,
+  "image": `${siteUrl}/images/Website_logo.png`,
+  "telephone": "",
+  "email": "info@ntroniq.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressRegion": "West Midlands",
+    "addressCountry": "GB"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "addressCountry": "GB"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United Kingdom"
+  },
+  "serviceType": [
+    "PCB Design",
+    "Schematic Capture",
+    "PCB Layout",
+    "EMC Compliance",
+    "Electronics Prototyping",
+    "Hardware Design"
+  ],
+  "priceRange": "$$",
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:00",
+    "closes": "17:00"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/company/ntroniq"
+  ]
+};
 ---
 
 <!DOCTYPE html>
@@ -19,13 +68,32 @@ const { title, description = 'Electronics design services. Get your PCB to marke
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{title} | ntronIQ</title>
   <meta name="description" content={description}>
-  <meta name="keywords" content="PCB, Hardware, electronics, Design, Development, PCB Layout, Schematic Capture, Electronics Design Service">
+  <meta name="keywords" content="PCB design, PCB layout, schematic capture, electronics design, EMC compliance, hardware design, prototype PCB, UK electronics design, circuit board design">
+  <link rel="canonical" href={canonicalUrl}>
+
+  <!-- Open Graph -->
   <meta property="og:locale" content="en_GB">
   <meta property="og:type" content="website">
   <meta property="og:title" content={`${title} | ntronIQ`}>
   <meta property="og:description" content={description}>
+  <meta property="og:url" content={canonicalUrl}>
   <meta property="og:site_name" content="ntronIQ">
+  <meta property="og:image" content={ogImage}>
+  <meta property="og:image:width" content="512">
+  <meta property="og:image:height" content="512">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content={`${title} | ntronIQ`}>
+  <meta name="twitter:description" content={description}>
+  <meta name="twitter:image" content={ogImage}>
+
+  <!-- Favicon -->
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
 </head>
 <body class="bg-white text-navy min-h-screen flex flex-col">
   <Header />
