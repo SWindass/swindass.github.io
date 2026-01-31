@@ -10,52 +10,151 @@ import Layout from '../../../layouts/Layout.astro';
 
       <div class="reveal">
         <p class="text-lg text-navy mb-6">
-          Emergency Light Tester ("the App") is developed by NtroniQ. This privacy policy explains how we handle your data.
+          Emergency Light Tester ("the App") is developed by NtroniQ. This privacy policy explains what data we collect, how we use it, and your rights regarding your data.
         </p>
 
-        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">Data Collection</h2>
+        <!-- Section 1: Data We Collect -->
+        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">1. Data We Collect</h2>
+
+        <h3 class="text-xl font-semibold text-navy mt-6 mb-3">Crash Reports & Diagnostics</h3>
         <p class="text-lg text-navy mb-4">
-          The App stores the following data locally on your device only:
+          We automatically collect crash logs and diagnostic information when the App encounters errors. This includes:
+        </p>
+        <ul class="space-y-2 text-lg text-navy mb-6">
+          <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> Device type and model</li>
+          <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> Operating system version</li>
+          <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> App version</li>
+          <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> Crash stack traces</li>
+          <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> App state at time of crash</li>
+        </ul>
+        <p class="text-lg text-navy mb-6">
+          This data is collected via Firebase Crashlytics (Google).
+        </p>
+
+        <h3 class="text-xl font-semibold text-navy mt-6 mb-3">App Usage Data</h3>
+        <p class="text-lg text-navy mb-4">
+          We collect basic app interaction data to understand how the App is used and monitor app health:
+        </p>
+        <ul class="space-y-2 text-lg text-navy mb-6">
+          <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> App opens</li>
+          <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> Screen views</li>
+        </ul>
+        <p class="text-lg text-navy mb-6">
+          This data is collected automatically via Firebase Analytics (Google). We do <strong>NOT</strong> collect advertising identifiers (AD_ID).
+        </p>
+
+        <h3 class="text-xl font-semibold text-navy mt-6 mb-3">Purchase Information</h3>
+        <p class="text-lg text-navy mb-6">
+          We query your subscription status from Google Play to enable Pro features. Purchase tokens are processed in memory only and are not stored by our App. Your purchase history is managed entirely by Google Play.
+        </p>
+
+        <h3 class="text-xl font-semibold text-navy mt-6 mb-3">Local Data (Stored on Your Device Only)</h3>
+        <p class="text-lg text-navy mb-4">
+          The following data is stored locally on your device and is never transmitted to our servers:
         </p>
         <ul class="space-y-2 text-lg text-navy mb-6">
           <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> Location names and zones you create</li>
           <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> Test records and results</li>
           <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> Tester names and signatures</li>
+          <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> Photos attached to test records</li>
           <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> App settings and preferences</li>
         </ul>
 
-        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">Data Storage</h2>
-        <p class="text-lg text-navy mb-6">
-          All data is stored locally on your device. We do not collect, transmit, or store any of your data on external servers.
-        </p>
+        <!-- Section 2: How We Use Your Data -->
+        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">2. How We Use Your Data</h2>
+        <div class="overflow-x-auto mb-6">
+          <table class="w-full text-lg text-navy border-collapse">
+            <thead>
+              <tr class="bg-gray-100">
+                <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Data Type</th>
+                <th class="border border-gray-300 px-4 py-3 text-left font-semibold">Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="border border-gray-300 px-4 py-3">Crash reports</td>
+                <td class="border border-gray-300 px-4 py-3">To diagnose and fix bugs, improve app stability</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="border border-gray-300 px-4 py-3">App interactions</td>
+                <td class="border border-gray-300 px-4 py-3">To understand usage patterns, monitor app health</td>
+              </tr>
+              <tr>
+                <td class="border border-gray-300 px-4 py-3">Purchase status</td>
+                <td class="border border-gray-300 px-4 py-3">To enable/disable Pro features</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">Third-Party Services</h2>
+        <!-- Section 3: Third-Party Services -->
+        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">3. Third-Party Services</h2>
         <p class="text-lg text-navy mb-4">
-          The App uses the following third-party services:
+          We share data with the following third-party services:
         </p>
         <ul class="space-y-2 text-lg text-navy mb-6">
-          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Firebase Crashlytics</strong> - Collects anonymous crash reports to help us fix bugs. This includes device type, operating system version, and crash stack traces. No personal data is collected.</span></li>
-          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Google Play Billing</strong> - Processes in-app purchases. Payment information is handled entirely by Google.</span></li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Google/Firebase (Crashlytics, Analytics)</strong> - for crash reporting and usage analytics</span></li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Google Play</strong> - for subscription and purchase verification</span></li>
+        </ul>
+        <p class="text-lg text-navy mb-4">
+          For more information about how these services handle your data, please refer to their privacy policies:
+        </p>
+        <ul class="space-y-2 text-lg text-navy mb-6">
+          <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" class="text-pink hover:text-pink-light">Google Privacy Policy</a></li>
+          <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener noreferrer" class="text-pink hover:text-pink-light">Firebase Privacy and Security</a></li>
         </ul>
 
-        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">Data Sharing</h2>
+        <!-- Section 4: Data Retention -->
+        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">4. Data Retention</h2>
+        <ul class="space-y-2 text-lg text-navy mb-6">
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Crash reports and analytics:</strong> Retained according to Google/Firebase default retention policies</span></li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Purchase data:</strong> Not stored locally by our App (managed by Google Play)</span></li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span><strong>Local data:</strong> Retained on your device until you delete it</span></li>
+        </ul>
+
+        <!-- Section 5: User Rights & Choices -->
+        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">5. Your Rights & Choices</h2>
+        <ul class="space-y-2 text-lg text-navy mb-6">
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span>Crash reporting and analytics collection is automatic and cannot be disabled within the App</span></li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span>All test data, locations, and settings are stored locally on your device only</span></li>
+          <li class="flex items-start"><span class="text-pink mr-3 mt-1">&#8226;</span> <span>You can delete all local data by clearing app data in your device settings or uninstalling the App</span></li>
+        </ul>
+
+        <!-- Section 6: Data NOT Collected -->
+        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">6. Data We Do NOT Collect</h2>
+        <p class="text-lg text-navy mb-4">
+          We want to be clear about what we do <strong>not</strong> collect:
+        </p>
+        <ul class="space-y-2 text-lg text-navy mb-6">
+          <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> We do NOT collect your name, email, or personal contact information</li>
+          <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> We do NOT collect location or GPS data</li>
+          <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> We do NOT use advertising identifiers (AD_ID)</li>
+          <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> We do NOT require account creation or login</li>
+          <li class="flex items-center"><span class="text-pink mr-3">&#8226;</span> Test records, photos, and signatures remain on your device unless you choose to share them</li>
+        </ul>
+
+        <!-- Section 7: User-Initiated Data Sharing -->
+        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">7. User-Initiated Data Sharing</h2>
         <p class="text-lg text-navy mb-6">
-          We do not sell, trade, or share your personal data with third parties.
+          You may choose to email test reports (PDF) containing location names, test results, tester name, and signature. This sharing is entirely optional and initiated only by you through your device's email application.
         </p>
 
-        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">Data Deletion</h2>
-        <p class="text-lg text-navy mb-6">
-          You can delete all app data at any time by clearing app data in your device settings or uninstalling the App.
-        </p>
-
-        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">Children's Privacy</h2>
+        <!-- Section 8: Children's Privacy -->
+        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">8. Children's Privacy</h2>
         <p class="text-lg text-navy mb-6">
           The App is not intended for children under 13. We do not knowingly collect data from children.
         </p>
 
-        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">Contact</h2>
+        <!-- Section 9: Changes to This Policy -->
+        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">9. Changes to This Policy</h2>
         <p class="text-lg text-navy mb-6">
-          If you have questions about this privacy policy, contact: <a href="mailto:privacy@ntroniq.com" class="text-pink hover:text-pink-light">privacy@ntroniq.com</a>
+          We may update this privacy policy from time to time. Any changes will be posted on this page with an updated revision date.
+        </p>
+
+        <!-- Section 10: Contact -->
+        <h2 class="text-2xl font-bold text-navy mt-8 mb-4">10. Contact Us</h2>
+        <p class="text-lg text-navy mb-6">
+          If you have questions about this privacy policy, please contact us at: <a href="mailto:privacy@ntroniq.com" class="text-pink hover:text-pink-light">privacy@ntroniq.com</a>
         </p>
 
         <p class="text-gray-500 mt-12 pt-8 border-t">
