@@ -2415,7 +2415,13 @@ function applyTileTheme(theme) {
 function getCss(name) { return getComputedStyle(document.documentElement).getPropertyValue(name).trim(); }
 
 // type: 'dl' | 'pr' | 'pi'. 'pr' uses tiny dots because there are 900+ of them.
-const TYPE_TOKENS = {
+// On touch devices we bump the radii so fingers can actually hit them.
+const IS_TOUCH = window.matchMedia('(pointer: coarse)').matches;
+const TYPE_TOKENS = IS_TOUCH ? {
+  dl: { def: '--pin', mine: '--pin-mine', mineRing: '--pin-mine-ring', baseR: 9, mineR: 11, baseW: 2 },
+  pr: { def: '--pr-pin', mine: '--pr-pin-mine', mineRing: '--pr-pin-mine-ring', baseR: 6, mineR: 9, baseW: 1.5 },
+  pi: { def: '--pi-pin', mine: '--pi-pin-mine', mineRing: '--pi-pin-mine-ring', baseR: 7, mineR: 10, baseW: 2 }
+} : {
   dl: { def: '--pin', mine: '--pin-mine', mineRing: '--pin-mine-ring', baseR: 6, mineR: 8, baseW: 2 },
   pr: { def: '--pr-pin', mine: '--pr-pin-mine', mineRing: '--pr-pin-mine-ring', baseR: 3.5, mineR: 7, baseW: 1 },
   pi: { def: '--pi-pin', mine: '--pi-pin-mine', mineRing: '--pi-pin-mine-ring', baseR: 4.5, mineR: 7.5, baseW: 1.5 }
@@ -2592,20 +2598,25 @@ function updateLabels() {
   labelLayer.clearLayers();
   if (map.getZoom() < LABEL_ZOOM) return;
   const bounds = map.getBounds();
-  // Label every visible-type pin that's in-viewport — pins aren't themselves filtered,
-  // only the side list is, so labels should match what's on the map.
+  // Label every pin that's actually on the map now (respecting mine-filter and viewport).
+  const dlFiltering = mineSetFor('dl').size > 0;
+  const prFiltering = mineSetFor('pr').size > 0;
+  const piFiltering = mineSetFor('pi').size > 0;
   if (typeVisible.dl) {
-    CLUBS.forEach(c => {
+    CLUBS.forEach((c, i) => {
+      if (dlFiltering && !isMine('dl', i)) return;
       if (bounds.contains([c.lat, c.lng])) labelLayer.addLayer(makeLabel('dl', c));
     });
   }
   if (typeVisible.pr) {
-    PARKRUNS.forEach(p => {
+    PARKRUNS.forEach((p, i) => {
+      if (prFiltering && !isMine('pr', i)) return;
       if (bounds.contains([p.lat, p.lng])) labelLayer.addLayer(makeLabel('pr', p));
     });
   }
   if (typeVisible.pi) {
-    PREMIER_INNS.forEach(h => {
+    PREMIER_INNS.forEach((h, i) => {
+      if (piFiltering && !isMine('pi', i)) return;
       if (bounds.contains([h.lat, h.lng])) labelLayer.addLayer(makeLabel('pi', h));
     });
   }
@@ -2751,7 +2762,23 @@ function toggleMine(type, i, picked) {
   }
   const row = listEls[type].querySelector('.club[data-idx="' + i + '"]');
   if (row) row.classList.toggle('mine', picked);
+  applyMineFilter(type);
+  updateLabels();
   updateSelectionBar();
+}
+
+// If a type has any selections, only those pins stay on the map.
+// With no selections, every pin shows (so the map is useful on first visit).
+function applyMineFilter(type) {
+  const layer = typeLayers[type];
+  const pins = pinByIdxMap[type];
+  const filteringOn = mineSetFor(type).size > 0;
+  pins.forEach((m, i) => {
+    const show = !filteringOn || isMine(type, i);
+    const inLayer = layer.hasLayer(m);
+    if (show && !inLayer) layer.addLayer(m);
+    else if (!show && inLayer) layer.removeLayer(m);
+  });
 }
 
 clearMineBtn.addEventListener('click', () => {
@@ -2765,6 +2792,10 @@ clearMineBtn.addEventListener('click', () => {
   dlPinByIdx.forEach((m, i) => m.setStyle(pinStyle('dl', stateFor('dl', i), false)));
   prPinByIdx.forEach((m, i) => m.setStyle(pinStyle('pr', stateFor('pr', i), false)));
   piPinByIdx.forEach((m, i) => m.setStyle(pinStyle('pi', stateFor('pi', i), false)));
+  applyMineFilter('dl');
+  applyMineFilter('pr');
+  applyMineFilter('pi');
+  updateLabels();
   renderList();
   updateSelectionBar();
 });
@@ -3002,6 +3033,9 @@ if (window.innerWidth <= 720) {
 
 renderList();
 updateSelectionBar();
+applyMineFilter('dl');
+applyMineFilter('pr');
+applyMineFilter('pi');
 </script>
 </body>
 </html>
