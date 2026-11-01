@@ -2399,6 +2399,21 @@ const map = L.map('map', {
   worldCopyJump: false
 });
 map.fitBounds(UK_BOUNDS, { padding: [20, 20] });
+// Mobile browsers (notably Android Chrome) report a stale container size during init
+// because the address bar / viewport height is still settling. If we don't re-fit after
+// that, the first paint can land on [0,0] (off the coast of Africa) until the user
+// interacts with the map. Re-sync a few times to catch the viewport snapping to final size.
+function resyncMapToUK() {
+  map.invalidateSize();
+  map.fitBounds(UK_BOUNDS, { padding: [20, 20] });
+}
+requestAnimationFrame(resyncMapToUK);
+window.addEventListener('load', resyncMapToUK);
+setTimeout(resyncMapToUK, 400);
+if (window.visualViewport) {
+  // Fires when Android's URL bar hides/shows.
+  window.visualViewport.addEventListener('resize', () => map.invalidateSize());
+}
 
 // Base map: Esri's World Street Map and Dark Gray Canvas. Works from file:// origins
 // without an API key. (OSM's own tile server 403s file:// requests on the Referer check.)
